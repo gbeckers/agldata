@@ -22,7 +22,7 @@ long as there is no official release I recommend working in Anaconda.
 
 Create an environment::
 
-    $ conda create -n agltest pip python=3.6 jupyterlab git pyyaml=5.1
+    $ conda create -n agltest pip python=3.7 jupyterlab git pyyaml=5.1
 
 Switch to this new environment:
 
@@ -36,7 +36,7 @@ Windows::
 
 Install the agldata master repo::
 
-    $ pip install git+https://git.science.uu.nl/G.J.L.Beckers/agldata@master
+    $ pip install git+https://github.com/gbeckers//agldata@master
 
 
 If you want to remove the conda environment later::
