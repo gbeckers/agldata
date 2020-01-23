@@ -1,0 +1,36 @@
+# The string sets originate from: Heijningen CAA van, Chen J, Laatum I van,
+# Hulst B van der, Cate C ten (2013) Rule learning by zebra finches in an
+# artificial grammar learning task: which rule? Anim Cogn 16:165–175.
+
+readingframe: 1
+
+strings:
+    - ABA:  ABA
+    - BAB:  BAB
+    - BBA:  BBA
+    - AAB:  AAB
+    - BAA:  BAA
+    - ABB:  ABB
+    
+    - ACA:  ACA
+    - CAC:  CAC
+    - ABBA: ABBA
+    - BAAB: BAAB
+    - ABAB: ABAB
+    - BABA: BABA
+    - AABB: AABB
+    - BBAA: BBAA
+       
+categories:
+    Experiment_1_Go: [ABA, BAB]
+    Experiment_1_NoGo: [BBA, AAB, BAA, ABB]
+    Experiment_1_probeset_1: [ACA, CAC, ABBA, BAAB]
+    Experiment_1_probeset_2: [ABAB, BABA, AABB, BBAA]
+    Experiment_2_Go: [ABA, BAB, ABBA, BAAB]
+    Experiment_2_NoGo: [BBA, AAB, BAA, ABB, ABAB, BABA, AABB, BBAA]
+    Go: [ABA, BAB, ABBA, BAAB]
+    NoGo: [BBA, AAB, BAA, ABB, ABAB, BABA, AABB, BBAA]
+
+categorycolors:
+     Go: "#0071c1"
+     NoGo: "#c00000"

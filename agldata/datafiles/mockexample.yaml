@@ -1,0 +1,57 @@
+# Comments in YAML files are defined by a preceding '#' character
+# Provide a comment section at the top with a reference to the study,
+# how the data was obtained, and who entered the data. Any anything else
+# that may be useful to know. Comments can be used throughout the file.
+# Try to keep line length < 80 characters to keep things readable.
+
+
+# Optionally define a reading frame. I.e. how many characters make up one
+#  token? If this parameter is not provided, it defaults to `1`. "ABCD" is a
+# string of four tokens when readingframe is '1', but two tokens, AB and CD, if
+# readingframe is '2'.
+readingframe: 2
+
+# Define strings as a list of "label: string" mappings. A label is something
+# you use to refer to a particular string. A string is a sequence of tokens,
+#  taking into account the readingframe parameter.
+strings:
+  - Exposure1: A1A2C1B2B1
+  - Exposure2: B1B2C1A2A1
+  - Test1: A2A1C1B1B2
+  - Test2: B2B1C1A1A2
+  - Test3: A2A1C1B2B1
+  - Test4: B2B1C1A2A1
+
+# Optionally define categories of strings like below. This can be handy when
+# there a groups of strings that have different roles in an experiment.
+categories:
+  - Exposure: [Exposure1, Exposure2]
+  - TestCorrect: [Test1, Test2]
+  - TestViolating: [Test3, Test4]
+
+# Optionally define colors that signify categories. This can be handy in
+# vizualization, for example in case you want to use the same colors as was
+# used in the original publication. Use hexadecimal color code. Note that
+# the color codes need double quotes
+categorycolors:
+    Exposure: "#000077" # blue
+    TestCorrect: "#007700" # green
+    TestViolation: "#770000" # red
+
+# Optionally define token durations, in seconds.
+tokendurations:
+    A1: 0.2
+    A2: 0.25
+    B1: 0.23
+    B2: 0.21
+    C1: 0.5
+    C2: 0.48
+
+# Optionally define fixed duration of silence between tokens, in seconds.
+tokenintervalduration: 0.1
+
+# Optionally define comparisons between *two* string categories that are
+# made in the publication
+categorycomparisons:
+    - [Exposure, TestCorrect]
+    - [Exposure, TestViolating]
