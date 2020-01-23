@@ -12,7 +12,7 @@ structured way, for example to use them for (meta-) analyses.
 
 You can easily add data sets by entering them in a file in a user-friendly
 format (`YAML <https://yaml.org/>`__). See `example here
-<https://github.com/gbeckers/agldata/tree/master/datafiles
+<https://github.com/gbeckers/agldata/tree/master/agldata/datafiles
 /wilsonetal_jneurosci_2013.yaml>`__.
 
 
@@ -118,7 +118,8 @@ Data format
 -----------
 
 See a `mock example here
-<https://github.com/gbeckers/agldata/tree/master/datafiles/mockexample.yaml>`__
+<https://github.com/gbeckers/agldata/tree/master/agldata/datafiles/mockexample
+.yaml>`__
 showing how to define data in a yaml file.
 
 
