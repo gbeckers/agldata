@@ -4,74 +4,49 @@ from .argvalidation import checkpositiveint, checkstring
 from .datafiles import get_datadict
 
 
-__all__ = ['get_stringdata', 'String']# 'StringData', 'StringLabelTuple',
-# 'StringDict']
+__all__ = ['get_stringdata', 'String', 'StringDict', 'StringData',
+           'StringLabelTuple']
 
 class String(str):
+    """A sequence of tokens.
 
-    def __init__(self, readingframe=1):
+     For efficiency reasons this is implemented as a subclass of Python str,
+     with an added `readingframe`  attribute. The reading frame determines how
+     many characters make up one token.
 
+     Note that all methods are inherited from str and return str objects, not
+     String objects.
+
+    """
+
+    @staticmethod
+    def _is_valid(value, readingframe):
+        return (len(value) % readingframe) == 0
+
+    def __new__(cls, value, readingframe=1):
+        if not cls._is_valid(value, readingframe):
+            raise ValueError(f"The length of '{value}' ({len(value)}) is not "
+                             f"compatible with a reading frame of {readingframe}")
+        return super().__new__(cls, value)
+
+    def __init__(self, value, readingframe=1):
+        checkpositiveint(readingframe)
         self._readingframe = readingframe
 
     @property
     def readingframe(self):
+        """The number of characters that make up one string token. Normally 1,
+        so that, e.g. the string "abcd" has 4 tokens. However if there exist
+        many tokens, these can be coded with multiple ascii symbols. E.g., if
+        readingframe is 2, then "a1a2" has two tokens, namely "a1" and "a2"."""
         return self._readingframe
 
 
-
-
-class StringData(object):
-
-    def __init__(self, strings, readingframe=1, categories=None,
-                 categorycomparisons=None, categorycolors=None,
-                 tokendurations=None, tokenintervalduration=None,
-                 anchorsymbol=None):
-
-        self.strings = strings = StringDict(strings,
-                                            readingframe=readingframe,
-                                            anchorsymbol=anchorsymbol)
-        self.readingframe = readingframe
-        if categories is None:
-            categories = {}
-        self.categories = {}
-        for l, c in categories.items():
-            self.categories[l] = StringLabelTuple(c, stringdict=strings)
-        if categorycomparisons is None:
-            categorycomparisons = (('All', 'All'),)
-        self.categorycomparisons = categorycomparisons
-        self.tokendurations = tokendurations
-        self.tokenintervalduration = tokenintervalduration
-        categorycolors = {} if categorycolors is None else categorycolors
-        self.stringlabelcolors = {}
-        for category, color in categorycolors.items():
-            for sl in self.categories[category]:
-                self.stringlabelcolors[sl] = color
-        for label, string in self.strings.items():
-            if label not in self.stringlabelcolors:
-                self.stringlabelcolors[label] = 'black'
-        if 'All' not in self.categories:
-            l = list(self.strings.keys())
-            self.categories['All'] = StringLabelTuple(l, stringdict=strings)
-
-    def __getitem__(self, item):
-        return self.categories[item]
-
-    def __str__(self):
-
-        lines = [str(self.strings)]
-        lines.append('Categories:\n')
-        for category, strt in self.categories.items():
-            if not category == 'All':
-                lines.append('    {}: {}\n'.format(category, strt))
-        return ''.join(lines)
-
-    __repr__ = __str__
-
-
-# make sure the input is a dict
 class StringDict(OrderedDict):
     """
-    An ordered dictionary of string key to token string value mappings.
+    An ordered dictionary of string label to token string mappings.
+
+    E.g. {'hab1': 'ababcbaba', 'hab2': 'aacbbb'}
 
     StringDict() -> new empty dictionary
     StringDict(mapping) -> new dictionary initialized from a mapping object's
@@ -115,10 +90,14 @@ class StringDict(OrderedDict):
 
     @property
     def readingframe(self):
+        """The number of characters that make up one string token. Normally 1,
+        so that, e.g. the string "abcd" has 4 tokens. However if there exist
+        many tokens, these can be coded with multiple ascii symbols. E.g., if
+        readingframe is 2, then "a1a2" has two tokens, namely "a1" and "a2"."""
         return self._readingframe
 
     def __setitem__(self, key, value):
-        checkstring(value, readingframe=self._readingframe)
+        value = String(value, readingframe=self._readingframe)
         super().__setitem__(key, value)
 
     def __str__(self):
@@ -131,9 +110,31 @@ class StringDict(OrderedDict):
         return ''.join(lines)
 
 
-class StringLabelTuple(object):
-    def __init__(self, strings, stringdict=None, readingframe=None):
-        stringlabels = tuple(strings)
+class StringLabelTuple:
+    """A tuple of token strings, based on their labels.
+
+    Parameters
+    ----------
+    stringlabels: sequence
+         A sequence of labels (python str objects) that refer to token
+         strings. The labels should be keys in the stringdict, if provided.
+         If stringdict is not provided, then the labels are assumed to be
+         identical to the token strings (i.e. 'aba' stands for the token
+         sequence (a,b,a).
+    stringdict: StringDict
+        An agldata StringDict that has the stringlabels as keys and the
+        corresponding token strings as values.
+    readingframe: positive, nonzero int, default 1
+        The number of characters that make up one string token. This will
+        often be `1`, so that, e.g. the string "abcd" has 4 tokens. However if
+        there are more tokens than can be coded in ascii symbols,
+        the larger readingframes are the solution. E.g., if readingframe is 2,
+        then "a1a2" has two tokens, namely "a1" and "a2".
+
+    """
+
+    def __init__(self, stringlabels, stringdict=None, readingframe=None):
+        stringlabels = tuple(stringlabels)
         if stringdict is not None:
             if not set(stringlabels).issubset(stringdict):
                 raise ValueError('Not all strings are in stringdict')
@@ -183,6 +184,87 @@ class StringLabelTuple(object):
         return tuple((l, s) for l, s in self)
 
 
+class StringData:
+    """String data set
+
+    Parameters
+    ----------
+    strings: StringDict
+        It can be a StringDict or anything that is accepted by the StringDict
+        class at instantiation.
+    readingframe: positive, nonzero int, default 1
+        The number of characters that make up one string token. This will
+        often be `1`, so that, e.g. the string "abcd" has 4 tokens. However if
+        there are more tokens than can be coded in ascii symbols,
+        the larger readingframes are the solution. E.g., if readingframe is 2,
+        then "a1a2" has two tokens, namely "a1" and "a2".
+    categories: dict, optional
+        A dictionary of category label to StringLabelTuple mappings.
+    categorycomparisons: sequence
+        A sequence of category pairs that are to be compared.
+    categorycolors: dict
+        A dictionary with category to default color mappings. Handy for
+        figures or tables, e.g. to give violating strings a particular color
+        that matches the one used in a publication.
+
+    """
+
+    def __init__(self, strings, readingframe=None, categories=None,
+                 categorycolors=None, categorycomparisons=None,
+                 tokendurations=None, tokenintervalduration=None,
+                 anchorsymbol=None):
+
+        if isinstance(strings, StringDict):
+            if readingframe is None:
+                readingframe = strings.readingframe
+            else:
+                if not readingframe == strings.readingframe:
+                    raise ValueError(f"`readingframe` parameter ({readingframe}) "
+                                     f"is not the same as reading frame of "
+                                     f"strings ({strings.readingframe})")
+        elif readingframe is None:
+            readingframe = 1
+        self.strings = strings = StringDict(strings,
+                                            readingframe=readingframe,
+                                            anchorsymbol=anchorsymbol)
+        self.readingframe = readingframe
+        if categories is None:
+            categories = {}
+        self.categories = {}
+        for l, c in categories.items():
+            self.categories[l] = StringLabelTuple(c, stringdict=strings)
+        if categorycomparisons is None:
+            categorycomparisons = (('All', 'All'),)
+        self.categorycomparisons = categorycomparisons
+        self.tokendurations = tokendurations
+        self.tokenintervalduration = tokenintervalduration
+        categorycolors = {} if categorycolors is None else categorycolors
+        self.stringlabelcolors = {}
+        for category, color in categorycolors.items():
+            for sl in self.categories[category]:
+                self.stringlabelcolors[sl] = color
+        for label, string in self.strings.items():
+            if label not in self.stringlabelcolors:
+                self.stringlabelcolors[label] = 'black'
+        if 'All' not in self.categories:
+            l = list(self.strings.keys())
+            self.categories['All'] = StringLabelTuple(l, stringdict=strings)
+
+    def __getitem__(self, item):
+        return self.categories[item]
+
+    def __str__(self):
+
+        lines = [str(self.strings)]
+        lines.append('Categories:\n')
+        for category, strt in self.categories.items():
+            if not category == 'All':
+                lines.append('    {}: {}\n'.format(category, strt))
+        return ''.join(lines)
+
+    __repr__ = __str__
+
+
 def get_stringdata(study, anchorsymbol=None):
     """Returns a dictionary with at least a 'strings' key. In addition it may
     contain a 'readingframe' key, a 'comparisons' key and a 'categories' key,
@@ -190,7 +272,6 @@ def get_stringdata(study, anchorsymbol=None):
 
     """
     return StringData(**get_datadict(study), anchorsymbol=anchorsymbol)
-
 
 def _get_random(randomseed=None):
     if randomseed is None:
@@ -201,8 +282,6 @@ def shuffled(seq, randomseed=None):
     seqc = [s for s in seq] # make copy
     _get_random(randomseed=randomseed).shuffle(seqc)
     return seqc
-
-
 
 def stimuli_wilsonetal_2013_jneurosci(randomseed=None, anchorsymbol=None):
 
