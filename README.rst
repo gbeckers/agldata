@@ -6,14 +6,14 @@ agldata
 
 What is agldata?
 ----------------
-A python library for published data from articifcial grammar learning or
+A python library for published data from artificial grammar learning or
 statistical learning studies. Data can be efficiently accessed in a
 structured way, for example to use them for (meta-) analyses.
 
 You can easily add data sets by entering them in a file in a user-friendly
 format (`YAML <https://yaml.org/>`__). See `example here
 <https://github.com/gbeckers/agldata/tree/master/agldata/datafiles
-/wilsonetal_jneurosci_2013.yaml>`__.
+/wilsonetal_2013_jneurosci.yaml>`__.
 
 
 Install
@@ -125,7 +125,7 @@ showing how to define data in a yaml file.
 
 Copyright and License
 ---------------------
-:copyright: Copyright 2019 by Gabriel Beckers, Utrecht University.
+:copyright: Copyright 2019-2020 by Gabriel Beckers, Utrecht University.
 :license: 3-Clause Revised BSD License, see LICENSE.txt for details.
 
 
