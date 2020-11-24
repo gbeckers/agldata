@@ -31,7 +31,7 @@ class String(str):
 
     def __init__(self, value, readingframe=1):
         checkpositiveint(readingframe)
-        self._readingframe = readingframe
+        self.__readingframe = readingframe
 
     @property
     def readingframe(self):
@@ -39,7 +39,16 @@ class String(str):
         so that, e.g. the string "abcd" has 4 tokens. However if there exist
         many tokens, these can be coded with multiple ascii symbols. E.g., if
         readingframe is 2, then "a1a2" has two tokens, namely "a1" and "a2"."""
-        return self._readingframe
+        return self.__readingframe
+
+    @property
+    def tokens(self):
+        """The set of fundamental units that the string consists of. If the
+        `readingframe` is 1, then this would be {'a', 'b', 'c', 'd'} in the case
+        of an "abcd" string. If `readingframe` is 2, then this would be
+        {'ab', 'cd'}"""
+        return set([self[i:i + self.__readingframe]
+                    for i in range(0, len(self), self.__readingframe)])
 
 
 class StringDict(OrderedDict):
@@ -73,7 +82,7 @@ class StringDict(OrderedDict):
 
     def __init__(self, *args, readingframe=1, anchorsymbol=None, **kwargs):
         checkpositiveint(readingframe)
-        self._readingframe = readingframe
+        self.__readingframe = readingframe
         try:
             super().__init__(*args, **kwargs)
         except ValueError:
@@ -94,10 +103,21 @@ class StringDict(OrderedDict):
         so that, e.g. the string "abcd" has 4 tokens. However if there exist
         many tokens, these can be coded with multiple ascii symbols. E.g., if
         readingframe is 2, then "a1a2" has two tokens, namely "a1" and "a2"."""
-        return self._readingframe
+        return self.__readingframe
+
+    @property
+    def tokens(self):
+        """The set of fundamental units that the strings in the dictionary
+        consist of. If the `readingframe` is 1, then this would be
+        {'a', 'b', 'c', 'd'} in the case of an "abcd" string. If `readingframe`
+        is 2, then this would be {'ab', 'cd'}"""
+        t = []
+        for key, value in self.items():
+            t.extend(value.tokens)
+        return set(t)
 
     def __setitem__(self, key, value):
-        value = String(value, readingframe=self._readingframe)
+        value = String(value, readingframe=self.__readingframe)
         super().__setitem__(key, value)
 
     def __str__(self):
@@ -148,11 +168,22 @@ class StringLabelTuple:
                 readingframe = 1
         self._stringdict = stringdict
         self._labels = stringlabels
-        self._readingframe = readingframe
+        self.__readingframe = readingframe
 
     @property
     def readingframe(self):
-        return self._readingframe
+        return self.__readingframe
+
+    @property
+    def tokens(self):
+        """The set of fundamental units that the strings in the tuple
+        consist of. If the `readingframe` is 1, then this would be
+        {'a', 'b', 'c', 'd'} in the case of an "abcd" string. If `readingframe`
+        is 2, then this would be {'ab', 'cd'}"""
+        t = []
+        for s in self.strings():
+            t.extend(s.tokens)
+        return set(t)
 
     def __iter__(self):
         if self._stringdict:  # labels are different from strings
@@ -263,6 +294,14 @@ class StringData:
         return ''.join(lines)
 
     __repr__ = __str__
+
+    @property
+    def tokens(self):
+        """The set of fundamental units that the strings in the data
+        consist of. If the `readingframe` is 1, then this would be
+        {'a', 'b', 'c', 'd'} in the case of an "abcd" string. If `readingframe`
+        is 2, then this would be {'ab', 'cd'}"""
+        return self.strings.tokens
 
 
 def get_stringdata(study, anchorsymbol=None):

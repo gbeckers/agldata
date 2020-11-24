@@ -12,13 +12,6 @@ String
    :inherited-members:
 
 
-StringData
-==========
-
-.. autoclass:: agldata.stringdata.StringData
-   :members:
-   :inherited-members:
-
 StringDict
 ==========
 
@@ -30,5 +23,12 @@ StringLabelTuple
 ================
 
 .. autoclass:: agldata.stringdata.StringLabelTuple
+   :members:
+   :inherited-members:
+
+StringData
+==========
+
+.. autoclass:: agldata.stringdata.StringData
    :members:
    :inherited-members:
