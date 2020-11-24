@@ -10,12 +10,26 @@ __all__ = ['get_stringdata', 'String', 'StringDict', 'StringData',
 class String(str):
     """A sequence of tokens.
 
-     For efficiency reasons this is implemented as a subclass of Python str,
-     with an added `readingframe`  attribute. The reading frame determines how
-     many characters make up one token.
+    For efficiency reasons this is implemented as a subclass of Python str,
+    with added `readingframe` and `tokens` attributes. The reading frame
+    determines how many characters make up one token.
 
-     Note that all methods are inherited from str and return str objects, not
-     String objects.
+    Note that all methods are inherited from str and return str objects, not
+    String objects. Most inherited methods do not respect the `readingframe`
+    of the string, and operate on python string characters.
+
+    Parameters
+    ----------
+    value: object
+        Object to be interpreted as an agldata String.
+    readingframe: positive, nonzero int, default None
+        The number of characters that make up one string token. This will
+        often be `1`, so that, e.g. the string "abcd" has 4 tokens. However if
+        there are more tokens than can be coded in one character position,
+        larger readingframes are the solution. E.g., if readingframe is 2,
+        then "a1a2" has two tokens, namely "a1" and "a2". If this parameter is
+        `None`, the readingframe will be taken from `value` if that has a
+        readingframe, and if it doesn't it will default to 1.
 
     """
 
@@ -23,13 +37,22 @@ class String(str):
     def _is_valid(value, readingframe):
         return (len(value) % readingframe) == 0
 
-    def __new__(cls, value, readingframe=1):
+    def __new__(cls, value, readingframe=None):
+        if readingframe is None:
+            readingframe = getattr(value, 'readingframe', 1)
+        if readingframe != getattr(value, 'readingframe', readingframe):
+            raise ValueError(f"`readingframe` parameter ({readingframe}) "
+                             f"does not match that of `value` ({value.readingframe})")
         if not cls._is_valid(value, readingframe):
             raise ValueError(f"The length of '{value}' ({len(value)}) is not "
                              f"compatible with a reading frame of {readingframe}")
         return super().__new__(cls, value)
 
-    def __init__(self, value, readingframe=1):
+    def __init__(self, value, readingframe=None):
+        if readingframe is None:
+            readingframe = getattr(value, 'readingframe', 1)
+        if readingframe != getattr(value, 'readingframe', readingframe):
+            raise ValueError("`readingframe` parameter does not match that of `value`")
         checkpositiveint(readingframe)
         self.__readingframe = readingframe
 
@@ -55,7 +78,12 @@ class StringDict(OrderedDict):
     """
     An ordered dictionary of string label to token string mappings.
 
-    E.g. {'hab1': 'ababcbaba', 'hab2': 'aacbbb'}
+    This is handy when strings are long and are easiest referred to by a
+    label, or when a label is more descriptive:E.g. {'hab1': 'ababcbaba',
+    'hab2': 'aacbbb'}. The dictionary can be created in the way they are
+    normally created in Python, but you can also just provide a sequence
+    or set of strings, in which case the labels of the strings will be the
+    same as the strings themselves.
 
     StringDict() -> new empty dictionary
     StringDict(mapping) -> new dictionary initialized from a mapping object's
@@ -66,7 +94,7 @@ class StringDict(OrderedDict):
         becomes a key to itself.
     StringDict(**kwargs) -> new dictionary initialized with the label= string
         pairs in the keyword argument list.
-        For example:  TokenStrings(A='abcd', B='efgh')
+        For example:  StringDict(A='abcd', B='efgh')
 
     Additional parameters
     ---------------------
@@ -75,14 +103,14 @@ class StringDict(OrderedDict):
         often be `1`, so that, e.g. the string "abcd" has 4 tokens. However if
         there are more tokens than can be coded in ascii symbols,
         the larger readingframes are the solution. E.g., if readingframe is 2,
-        then "a1a2" has two tokens, namely "a1" and "a2".
+        then "a1a2" has two tokens, namely "a1" and "a2". The readingframe of
+        all strings should be identical.
 
 
     """
 
-    def __init__(self, *args, readingframe=1, anchorsymbol=None, **kwargs):
-        checkpositiveint(readingframe)
-        self.__readingframe = readingframe
+    def __init__(self, *args, readingframe=None, anchorsymbol=None, **kwargs):
+        self.__readingframe = readingframe # to be set later if None, need it now for empty dict
         try:
             super().__init__(*args, **kwargs)
         except ValueError:
@@ -95,7 +123,10 @@ class StringDict(OrderedDict):
         for key, item in self.items():
             if anchorsymbol is not None:
                 item = f'{anchorsymbol}{item}{anchorsymbol}'
-            self[key] = String(item)
+            self[key] = String(item, readingframe=readingframe)
+            if readingframe is None: # we use the one on the string
+                readingframe = self[key].readingframe
+        self.__readingframe = readingframe
 
     @property
     def readingframe(self):
@@ -118,6 +149,7 @@ class StringDict(OrderedDict):
 
     def __setitem__(self, key, value):
         value = String(value, readingframe=self.__readingframe)
+        self.__readingframe = value.readingframe # in case it was None
         super().__setitem__(key, value)
 
     def __str__(self):
