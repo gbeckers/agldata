@@ -15,6 +15,7 @@ format (`YAML <https://yaml.org/>`__). See `example here
 <https://github.com/gbeckers/agldata/tree/master/agldata/datafiles
 /wilsonetal_2013_jneurosci.yaml>`__.
 
+Current version is: 0.1.0
 
 Install
 -------
@@ -44,6 +45,13 @@ If you want to remove the conda environment later::
 
     $ conda env remove -n agltest
 
+
+Contributing
+------------
+To add data from studies (using the format described below) or to fix
+bugs/add functionality, it is best to use a the Github pull request workflow.
+It is described here:
+https://github.com/processing/processing/wiki/Contributing-to-Processing-with-Pull-Requests
 
 Design considerations
 ---------------------

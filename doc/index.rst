@@ -25,6 +25,7 @@ open source and freely available under the
    studies
    dataformat
    design
+   contributing
    api
 
 Indices and tables
