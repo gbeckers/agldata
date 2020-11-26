@@ -4,8 +4,10 @@ from .argvalidation import checkpositiveint, checkstring
 from .datafiles import get_datadict
 
 
-__all__ = ['get_stringdata', 'String', 'StringDict', 'StringData',
+__all__ = ['get_stringdata', 'get_data', 'String', 'StringDict', 'StringData',
            'StringLabelTuple']
+
+# FIXME use properties instead of methods whenever possible
 
 class String(str):
     """A sequence of tokens.
@@ -336,13 +338,16 @@ class StringData:
         return self.strings.tokens
 
 
-def get_stringdata(study, anchorsymbol=None):
+def get_data(study, anchorsymbol=None):
     """Returns a dictionary with at least a 'strings' key. In addition it may
     contain a 'readingframe' key, a 'comparisons' key and a 'categories' key,
     and anything you defined in that file.
 
     """
     return StringData(**get_datadict(study), anchorsymbol=anchorsymbol)
+
+# FIXME raise depreciation warning
+get_stringdata = get_data
 
 def _get_random(randomseed=None):
     if randomseed is None:
@@ -439,35 +444,3 @@ def stimuli_attaheri_etal_2015_brainlanguage(randomseed=None):
     teststrings = constrings + violstrings
     teststim = shuffled(teststrings * 15, randomseed=randomseed)
     return expstim, teststim
-
-# old code from here; should we be able to save stringdata?
-
-# def save_stringdata(string_data, filename):
-#     """
-#     Saves a stringData class as a yaml file.
-#
-#     """
-#     # d = StringData(**string_data)
-#     string_list = []
-#     for string in string_data.strings:
-#         string_list.append({string: string})
-#
-#     stringcategories_list = {}
-#     string_types = {'Training': ['Train'], 'Testing': []}
-#     for category, items in string_data.stringcategories.items():
-#         if category is 'All':
-#             pass
-#         else:
-#             string_types['Testing'].append(category)
-#             stringcategories_list[category] = items
-#
-#     yaml_dict = {'readingframe': string_data.readingframe,
-#                  'strings': string_list,
-#                  'stringcategories': stringcategories_list,
-#                  'string_types': string_types}
-#
-#     if '.yaml' not in filename:
-#         filename += '.yaml'
-#     with open(filename, 'w') as yaml_file:
-#         yaml.dump(yaml_dict, yaml_file, default_flow_style=None)
-

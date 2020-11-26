@@ -21,6 +21,7 @@ open source and freely available under the
    :caption: Contents:
 
    install
+   example
    studies
    dataformat
    design
