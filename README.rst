@@ -10,6 +10,9 @@ A python library for published data from artificial grammar learning or
 statistical learning studies. Data can be efficiently accessed in a
 structured way, for example to use them for (meta-) analyses.
 
+A first attempt to documentation can be found here:
+https://agldata.readthedocs.io/
+
 You can easily add data sets by entering them in a file in a user-friendly
 format (`YAML <https://yaml.org/>`__). See `example here
 <https://github.com/gbeckers/agldata/tree/master/agldata/datafiles
