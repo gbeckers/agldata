@@ -22,14 +22,24 @@ Current version is: 0.1.0
 
 Install
 -------
-agldata depends on Python 3.6 or higher, and one external library (pyaml). As
-long as there is no official release I recommend working in Anaconda.
+agldata depends on Python 3.6 or higher, and one external library (pyaml).
 
-Create an environment::
+To install the latest release::
 
-    $ conda create -n agltest pip python=3.7 jupyterlab git pyyaml=5.1
+    $ pip install agldata
 
-Switch to this new environment:
+To use the latest version from GitHub, I recommend working in
+Anaconda, in which case you could first create a separate
+conda environment, called, e.g. "agl"::
+
+    $ conda create -n agl python=3.8 jupyterlab git pyyaml=5.1
+
+Then install agldata from GitHub::
+
+    $ pip install git+https://github.com/gbeckers//agldata@master
+
+
+To switch to this new environment in a terminal:
 
 Linux and MacOS::
 
@@ -39,14 +49,10 @@ Windows::
 
     $ conda activate agltest
 
-Install the agldata master repo::
-
-    $ pip install git+https://github.com/gbeckers//agldata@master
-
 
 If you want to remove the conda environment later::
 
-    $ conda env remove -n agltest
+    $ conda env remove -n agl
 
 
 Contributing
