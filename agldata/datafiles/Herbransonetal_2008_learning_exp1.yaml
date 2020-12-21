@@ -1,0 +1,114 @@
+# The strings sets originate from: Herbranson, W. T., & Shimp, C. P.
+# (2008). Artificial grammar learning in pigeons. Learning &
+# Behavior, 36(2), 116-137.
+
+
+readingframe: 1
+
+strings:
+   - Gram_1:			VTS
+   - Gram_2:			VTPS
+   - Gram_3:			TXTPS
+   - Gram_4:			TXSPVS
+   - Gram_5:			VSPXTS
+   - Gram_6:			TVPPPPS
+   - Gram_7:			TXSXPVS
+   - Gram_8:			VSXPXTS
+   - Gram_9:			VSPVPPS
+   - Gram_10:			VSXXPVS
+   - Gram_11:			TXSPVPPS
+   - Gram_12:			TXSXXPVS
+   - Gram_13:			VSXPXTPS
+   - Gram_14:			VTPPPPPS
+   - Gram_15:			VSXPVPPS
+   - Gram_16:			VSXXXPVS
+   - Gram_17:			TXTS
+   - Gram_18:			TVPPS
+   - Gram_19:			TVPPPS
+   - Gram_20:			TXTPPS
+   - Gram_21:			VTPPPS
+   - Gram_22:			TXSPVPS
+   - Gram_23:			TXTPPPS
+   - Gram_24:			VTPPPPS
+   - Gram_25:			VSXPVPS
+   - Gram_26:			TVPPPPPS
+   - Gram_27:			TXSXPVPS
+   - Gram_28:			TXTPPPPS
+   - Gram_29:			VSXXPXTS
+   - Gram_30:			VSPVPPPS
+   - Gram_31:			VSXXPVPS
+   - NGram_1:			VVS
+   - NGram_2:			VXSPVS
+   - NGram_3:			VSSVPS
+   - NGram_4:			TXSPXSS
+   - NGram_5:			VSPTPPS
+   - NGram_6:			TXSSXPVS
+   - NGram_7:			VSXVXTPS
+   - NGram_8:			VXPXTPPS
+   - NGram_9:			TPVS
+   - NGram_10:			VSTTS
+   - NGram_11:			TTXPVS
+   - NGram_12:			TTPPPVS
+   - NGram_13:			VSSXPVPS
+   - NGram_14:			TSTPPPSS
+   - NGram_15:			TSXXPVTS
+   - NGram_16:			VXPPPPPS
+   - NGram_17:			TXPS
+   - NGram_18:			TSPXTS
+   - NGram_19:			TPSXPVS
+   - NGram_20:			VSXXXTS
+   - NGram_21:			VSXSPVS
+   - NGram_22:			TXSPXTVS
+   - NGram_23:			VTPSPPPS
+   - NGram_24:			TSXPVPPS
+   - NGram_25:			TTPSS
+   - NGram_26:			TVTPVS
+   - NGram_27:			TTTPPVS
+   - NGram_28:			TVPXTPS
+   - NGram_29:			VVPTPPPS
+   - NGram_30:			TXSXPXPS
+   - NGram_31:			TXPXSPVS
+   - T_S_Gram_1:		TVPS
+   - T_S_Gram_2:		VTPPS
+   - T_S_Gram_3:		VSPVPS
+   - T_S_Gram_4:		VSXPVS
+   - T_S_Gram_5:		TXSPXTS
+   - T_S_Gram_6:		VSPXTPS
+   - T_NS_Gram_7:		TVS
+   - T_NS_Gram_8:		VSPVS
+   - T_NS_Gram_9:		TXSPXTPS
+   - T_NS_Gram_10:		TXSXPXTS
+   - T_NS_Gram_11:		VSPXTPPS
+   - T_NS_Gram_12:		VSPXSPVS
+   - T_S_NGram_1:		VXS
+   - T_S_NGram_2:		VVPS
+   - T_S_NGram_3:		TXTTS
+   - T_S_NGram_4:		TVPPPVS
+   - T_S_NGram_5:		TVSPVPPS
+   - T_S_NGram_6:		TSXXXPVS
+   - T_NS_NGram_7:		VVPXS
+   - T_NS_NGram_8:		TPVPPS
+   - T_NS_NGram_9:		TSPPPS
+   - T_NS_NGram_10:		VXSPVSS
+   - T_NS_NGram_11:		VVSPVPS
+   - T_NS_NGram_12:		TSXSPXTS
+
+categories:
+   Gram: [Gram_1, Gram_2, Gram_3, Gram_4, Gram_5, Gram_6, Gram_7, Gram_8, Gram_9, Gram_10, Gram_11, Gram_12, Gram_13, Gram_14, Gram_15, Gram_16, Gram_17, Gram_18, Gram_19, Gram_20, Gram_21, Gram_22, Gram_23, Gram_24, Gram_25, Gram_26, Gram_27, Gram_28, Gram_29, Gram_30, Gram_31] # grammatically correct strings
+   NGram: [NGram_1, NGram_2, NGram_3, NGram_4, NGram_5, NGram_6, NGram_7, NGram_8, NGram_9, NGram_10, NGram_11, NGram_12, NGram_13, NGram_14, NGram_15, NGram_16, NGram_17, NGram_18, NGram_19, NGram_20, NGram_21, NGram_22, NGram_23, NGram_24, NGram_25, NGram_26, NGram_27, NGram_28, NGram_29, NGram_30, NGram_31] # grammatically incorrect strings
+   T_S_Gram: [T_S_Gram_1, T_S_Gram_2, T_S_Gram_3, T_S_Gram_4, T_S_Gram_5, T_S_Gram_6]         # Test string with a similar grammar
+   T_NS_Gram: [T_NS_Gram_1, T_NS_Gram_2, T_NS_Gram_3, T_NS_Gram_4, T_NS_Gram_5, T_NS_Gram_6]         # Test string with a non-similar grammar
+   T_S_NGram: [T_S_NGram_1, T_S_NGram_2, T_S_NGram_3, T_S_NGram_4, T_S_NGram_5, T_S_NGram_6]         # Test string with a similar but flawed grammar
+   T_NS_NGram: [T_NS_NGram_1, T_NS_NGram_2, T_NS_NGram_3, T_NS_NGram_4, T_NS_NGram_5, T_NS_NGram_6]         # Test string with a non-similar but flawed grammar
+
+
+
+tokendurations:
+   v: 1
+   s: 1
+   x: 1
+   p: 1
+   t: 1
+
+
+tokenintervalduration: 1
