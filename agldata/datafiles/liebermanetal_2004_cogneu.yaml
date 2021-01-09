@@ -1,0 +1,79 @@
+# The strings sets originate from: Lieberman, M. D., Chang, G. Y., Chiao, J., Bookheimer, S. Y., & Knowlton, B. J. (2004).
+# An event-related fMRI study of artificial grammar learning in a balanced chunk strength design. Journal of cognitive
+# neuroscience, 16(3), 427-438.
+
+# Grammar used is that of Knowlton, B. J., & Squire, L. R. (1996). Artificial grammar
+# depends on implicit acquisition of both abstract and exemplar-specific information. Journal of Experimental
+# Psychology: Learning, Memory, and Cognition, 22, 169–181. (A-grammar)
+
+# Test string are separated on the basis of chunk strength. Every string consists of multiple bigrams and trigrams.
+# the amount of times the bigrams and trigrams appear in the training stimuli is the chunk strength
+
+readingframe: 1
+
+strings:
+   - Hab_1:            xxvt
+   - Hab_2:            xxvxjj
+   - Hab_3:            vxjj
+   - Hab_4:            xvjtvj
+   - Hab_5:            xxvxj
+   - Hab_6:            xvx
+   - Hab_7:            vxjjjj
+   - Hab_8:            xvt
+   - Hab_9:            xxxvt
+   - Hab_10:           vj
+   - Hab_11:           xvxjjj
+   - Hab_12:           vjtvtv
+   - Hab_13:           xxvj
+   - Hab_14:           vtvj
+   - Hab_15:           vjtvx
+   - Hab_16:           xxxvtv
+   - Hab_17:           xxvj
+   - Hab_18:           vjtvx
+   - Hab_19:           xxxvtv
+   - Hab_20:           xvxjj
+   - Hab_21:           vt
+   - Hab_22:           vjtvxj
+   - Hab_23:           xxxvx
+   - Hab_24:           vjtxvj
+   - Hab_25:           xvxj
+   - Hab_26:           xxxxvx
+   - Gram_H_1:         xxvxj
+   - Gram_H_2:         xvtv
+   - Gram_H_3:         vxj
+   - Gram_H_4:         xxvtv
+   - Gram_H_5:         xvjtvx
+   - Gram_H_6:         xxvtvj
+   - Gram_H_7:         vjtxvx
+   - Gram_H_8:         vx
+   - Gram_L_1:         vjtvt
+   - Gram_L_2:         vtvjj
+   - Gram_L_3:         vtvj
+   - Gram_L_4:         xvjtvt
+   - Gram_L_5:         vtv
+   - Gram_L_6:         xvtvj
+   - Gram_L_7:         xvtvj
+   - Gram_L_8:         vtvjj
+   - NGram_H_1:        vjtv
+   - NGram_H_2:        xxv
+   - NGram_H_3:        xvxv
+   - NGram_H_4:        xvxvj
+   - NGram_H_5:        xxvjjj
+   - NGram_H_6:        xjj
+   - NGram_H_7:        vxvj
+   - NGram_H_8:        xvxt
+   - NGram_L_1:        xxjj
+   - NGram_L_2:        vxjtj
+   - NGram_L_3:        xxvvjj
+   - NGram_L_4:        jxvt
+   - NGram_L_5:        xxtx
+   - NGram_L_6:        tvj
+   - NGram_L_7:        vxjjx
+   - NGram_L_8:        vjjxvt
+
+categories:
+   Hab: [Hab_1, Hab_2, Hab_3, Hab_4, Hab_5, Hab_6, Hab_7, Hab_8, Hab_9, Hab_10, Hab_11, Hab_12, Hab_13, Hab_14, Hab_15, Hab_16, Hab_17, Hab_18, Hab_19, Hab_20, Hab_21, Hab_22, Hab_23, Hab_24, Hab_25, Hab_26]  # habituation strings
+   Gram_H: [Gram_H_1, Gram_H_2, Gram_H_3, Gram_H_4, Gram_H_5, Gram_H_6, Gram_H_7, Gram_H_8]                   # Grammatical test strings with high chunk strength
+   Gram_L: [Gram_L_1, Gram_L_2, Gram_L_3, Gram_L_4, Gram_L_5, Gram_L_6, Gram_L_7, Gram_L_8]                   # Grammatical test strings with high low strength
+   NGram_H: [NGram_H_1, NGram_H_2, NGram_H_3, NGram_H_4, NGram_H_5, NGram_H_6, NGram_H_7, NGram_H_8]                   # Non-grammatical test strings with high chunk strength
+   NGram_L: [NGram_L_1, NGram_L_2, NGram_L_3, NGram_L_4, NGram_L_5, NGram_L_6, NGram_L_7, NGram_L_8]                   # Non-grammatical test strings with high low strength
