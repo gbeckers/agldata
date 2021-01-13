@@ -1,23 +1,32 @@
-# These strings originate from Endress AD, Carden S, Versace E, Hauser MD
-# (2009) The apes’ edge: positional learning in chimpanzees and humans.
-# Anim Cogn 13:483–495.
-
-readingframe: 1
+# The strings sets originate from: Endress AD, Carden S, Versace E,
+# Hauser MD (2010) The apes’ edge: positional learning in
+# chimpanzees and humans. Anim Cogn 13:483–495
 
 strings:
-    - XABXXX: XABXXX
-    - XAXBXX: XAXBXX
-    - XAXXBX: XAXXBX
-    - XXXABX: XXXABX
-    
-    - AXXXXB: AXXXXB
-    - BXXXXA: BXXXXA
-    - XXABXX: XXABXX
-    - XXBAXX: XXBAXX
-    - XXAXBX: XXAXBX
-    - XXBXAX: XXBXAX
-       
+   - Hab_1:            XABXXX
+   - Hab_2:            XAXBXX
+   - Hab_3:            XAXXBX
+   - Hab_4:            XXXABX
+   - Viol_1:           AXXXXB
+   - Viol_2:           BXXXXA
+   - Viol_3:           XXABXX
+   - Viol_4:           XXBAXX
+   - Viol_5:           XXAXBX
+   - Viol_6:           XXBXAX
+
 categories:
-    Habituation: [XABXXX, XAXBXX, XAXXBX, XXXABX]
-    Test: [AXXXXB, BXXXXA, XXABXX, XXBAXX, XXAXBX, XXBXAX]
-    
+   Hab: [Hab_1, Hab_2, Hab_3, Hab_4]
+   Viol: [Fam_1, Fam_2]               # Violating test strings
+
+categorycolors:
+   Fam: "#0071c1"
+   Viol: "#01b0f1"
+
+
+tokendurations:
+   A: 310
+   B: 280
+   X: 130
+
+
+tokenintervalduration: 150

@@ -1,0 +1,53 @@
+# The strings sets originate from: Newport, E. L., Hauser, M. D., Spaepen, G., & Aslin, R. N. (2004). Learning
+#at a distance II. Statistical learning of non-adjacent dependencies in a non-human primate. Cognitive
+# psychology, 49(2), 85-117.
+
+# follow-up study of Newport & Aslin (2004), stimuli look a lot a like but differ on some point
+# experiment 4 of the study
+
+# in contrary to previous study, this study also looked at cotton-top tamarins
+
+# ae = y
+
+
+readingframe: 2
+
+strings:
+   - Hab_A_1:            poguty
+   - Hab_A_2:            pagite
+   - Hab_A_3:            pagute
+   - Hab_A_4:            pogity
+   - Hab_A_5:            dakibe
+   - Hab_A_6:            dakuby
+   - Hab_A_7:            dokiby
+   - Hab_A_8:            dokube
+   - Hab_B_1:            tydoki
+   - Hab_B_2:            tydaku
+   - Hab_B_3:            tedoku
+   - Hab_B_4:            tedaki
+   - Hab_B_5:            bypogu
+   - Hab_B_6:            bypagu
+   - Hab_B_7:            bepagi
+   - Hab_B_8:            bepogi
+   - Test_A_1:           dokiby
+   - Test_A_2:           pagute
+   - Test_B_1:           bepogi
+   - Test_B_2:           tydaku
+   - Part_A_1:           bepogi
+   - Part_A_2:           tydaku
+   - Part_B_1:           gutedo
+   - Part_B_2:           kibypa
+
+
+categories:
+   Hab_A: [Hab_A_1, Hab_A_2, Hab_A_3, Hab_A_4, Hab_A_5, Hab_A_6, Hab_A_7, Hab_A_8]         # habituation string from language A
+   Hab_B: [Hab_B_1, Hab_B_2, Hab_B_3, Hab_B_4, Hab_B_5, Hab_B_6, Hab_B_7, Hab_B_8]         # habituation string from language B
+   Test_A: [Test_A_1, Test_A_2, Test_A_3, Test_A_4]    # test strings for language A
+   Test_B: [Test_B_1, Test_B_2, Test_B_3, Test_B_4]    # test strings for language B
+   Part_A: [Part_A_1, Part_A_2, Part_A_3, Part_A_4]    # part word strings for language A
+   Part_B: [Part_B_1, Part_B_2, Part_B_3, Part_B_4]    # part word strings for language A
+
+
+stringduration: 80
+
+tokenintervalduration: 0

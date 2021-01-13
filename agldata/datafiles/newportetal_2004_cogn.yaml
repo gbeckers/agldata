@@ -1,0 +1,57 @@
+# The strings sets originate from: Newport E. L.& Aslin R. N.. 2004Learning at a distance. I.
+# Statistical learning of non-adjacent dependencies. Cogn. Psycho
+
+# The test was a 2-alternative forced choice task, consisting of a randomized pairing of each of the five
+# test words and each of the five partwords
+
+# It looks a lot like other studies, like Toro et al (2005) and Hauser et al (2001)
+
+# 72 words pet minute for 21 long in one string
+
+readingframe: 2
+
+strings:
+   - Hab_1:            badite
+   - Hab_2:            bakute
+   - Hab_3:            batote
+   - Hab_4:            bapate
+   - Hab_5:            gudido
+   - Hab_6:            gukudo
+   - Hab_7:            gutodo
+   - Hab_8:            gupado
+   - Hab_9:            pidira
+   - Hab_10:           pikura
+   - Hab_11:           pitora
+   - Hab_12:           pipara
+   - Hab_13:           kedidu
+   - Hab_14:           kekudu
+   - Hab_15:           ketodu
+   - Hab_16:           kepadu
+   - Hab_17:           lodiki
+   - Hab_18:           lokuki
+   - Hab_19:           lotoki
+   - Hab_20:           lopaki
+   - Fam_1:            bakute
+   - Fam_2:            gupado
+   - Fam_3:            pitora
+   - Fam_4:            kedidu
+   - Fam_5:            lopaki
+   - Part_1:           bakuda
+   - Part_2:           gupara
+   - Part_3:           pitodu
+   - Part_4:           kediki
+   - Part_5:           lopate
+
+categories:
+   Hab: [Hab_1, Hab_2, Hab_3, Hab_4, Hab_5, Hab_6, Hab_7, Hab_8, Hab_9, Hab_10, Hab_11, Hab_12, Hab_13, Hab_14, Hab_15, Hab_16, Hab_17, Hab_18, Hab_19, Hab_20]  # habituation strings
+   Fam: [Fam_1, Fam_2, Fam_3, Fam_4, Fam_5]                     # Familiar test strings
+   Part: [Part_1, Part_2, Part_3, Part_4, Part_5]               # part words test strings
+
+
+categorycolors:
+   Fam: "#0071c1"
+   Part: "#01b0f1"
+
+stringduration: 80
+
+tokenintervalduration: 0

@@ -1,0 +1,165 @@
+# The strings sets originate from: Goranskaya, D., Kreitewolf, J., Mueller,
+# J. L., Friederici, A. D., & Hartwigsen, G. (2016). Fronto-parietal contributions ]
+# to phonological processes in successful artificial grammar learning. Frontiers in
+# human neuroscience, 10, 551.
+
+# this study was performed on human adults, this doesn't directly fit the goal of the
+# the study. But the grammar might be easily adapted in animal studies and might be less
+# strongly connected to propositional transitions.
+
+# the benefit of this study is that certain a-words are coupled to certain b-words
+# but in contrast to other study the coupling is not random
+
+# familiar test strings were 32 randomly selected habituation strings
+
+readingframe: 2
+
+strings:
+   - Hab_be_1:            begekopo
+   - Hab_be_2:            begekopu
+   - Hab_be_3:            begekupo
+   - Hab_be_4:            begekupu
+   - Hab_be_5:            bedetopo
+   - Hab_be_6:            bedetopu
+   - Hab_be_7:            bedetupo
+   - Hab_be_8:            bedetupu
+   - Hab_be_9:            begikopo
+   - Hab_be_10:           begikopu
+   - Hab_be_11:           begikupo
+   - Hab_be_12:           begikupu
+   - Hab_be_13:           beditopo
+   - Hab_be_14:           beditopu
+   - Hab_be_15:           beditupo
+   - Hab_be_16:           beditupu
+   - Hab_ge_1:            gebepoko
+   - Hab_ge_2:            gebepoku
+   - Hab_ge_3:            gebepuko
+   - Hab_ge_4:            gebepuku
+   - Hab_ge_5:            gedetoko
+   - Hab_ge_6:            gedetoku
+   - Hab_ge_7:            gedetuko
+   - Hab_ge_8:            gedetuku
+   - Hab_ge_9:            gebipoko
+   - Hab_ge_10:           gebipoku
+   - Hab_ge_11:           gebipuko
+   - Hab_ge_12:           gebipuku
+   - Hab_ge_13:           geditoko
+   - Hab_ge_14:           geditoku
+   - Hab_ge_15:           gedituko
+   - Hab_ge_16:           gedituku
+   - Hab_de_1:            debepoto
+   - Hab_de_2:            debepotu
+   - Hab_de_3:            debeputo
+   - Hab_de_4:            debeputu
+   - Hab_de_5:            degekoto
+   - Hab_de_6:            degekotu
+   - Hab_de_7:            degekuto
+   - Hab_de_8:            degekutu
+   - Hab_de_9:            debipoto
+   - Hab_de_10:           debipotu
+   - Hab_de_11:           debiputo
+   - Hab_de_12:           debiputu
+   - Hab_de_13:           degikoto
+   - Hab_de_14:           degikotu
+   - Hab_de_15:           degikuto
+   - Hab_de_16:           degikutu
+   - Hab_bi_1:            bigekopo
+   - Hab_bi_2:            bigekopu
+   - Hab_bi_3:            bigekupo
+   - Hab_bi_4:            bigekupu
+   - Hab_bi_5:            bidetopo
+   - Hab_bi_6:            bidetopu
+   - Hab_bi_7:            bidetupo
+   - Hab_bi_8:            bidetupu
+   - Hab_bi_9:            bigikopo
+   - Hab_bi_10:           bigikopu
+   - Hab_bi_11:           bigikupo
+   - Hab_bi_12:           bigikupu
+   - Hab_bi_13:           biditopo
+   - Hab_bi_14:           biditopu
+   - Hab_bi_15:           biditupo
+   - Hab_bi_16:           biditupu
+   - Hab_gi_1:            gibepoko
+   - Hab_gi_2:            gibepoku
+   - Hab_gi_3:            gibepuko
+   - Hab_gi_4:            gibepuku
+   - Hab_gi_5:            gidetoko
+   - Hab_gi_6:            gidetoku
+   - Hab_gi_7:            gidetuko
+   - Hab_gi_8:            gidetuku
+   - Hab_gi_9:            gibipoko
+   - Hab_gi_10:           gibipoku
+   - Hab_gi_11:           gibipuko
+   - Hab_gi_12:           gibipuku
+   - Hab_gi_13:           giditoko
+   - Hab_gi_14:           giditoku
+   - Hab_gi_15:           gidituko
+   - Hab_gi_16:           gidituku
+   - Hab_di_1:            dibepoto
+   - Hab_di_2:            dibepotu
+   - Hab_di_3:            dibeputo
+   - Hab_di_4:            dibeputu
+   - Hab_di_5:            digekoto
+   - Hab_di_6:            digekotu
+   - Hab_di_7:            digekuto
+   - Hab_di_8:            digekutu
+   - Hab_di_9:            dibipoto
+   - Hab_di_10:           dibipotu
+   - Hab_di_11:           dibiputo
+   - Hab_di_12:           dibiputu
+   - Hab_di_13:           digikoto
+   - Hab_di_14:           digikotu
+   - Hab_di_15:           digikuto
+   - Hab_di_16:           digikutu
+   - Viol_1:              begekotu
+   - Viol_2:              bedetoko
+   - Viol_3:              begikuto
+   - Viol_4:              bedituko
+   - Viol_5:              begikoku
+   - Viol_6:              bedetutu
+   - Viol_7:              gebepoto
+   - Viol_8:              gedetopu
+   - Viol_9:              gebiputu
+   - Viol_10:             geditopu
+   - Viol_11:             gedituto
+   - Viol_12:             debepoku
+   - Viol_13:             degekupo
+   - Viol_14:             debipopu
+   - Viol_15:             degikuko
+   - Viol_16:             debipuku
+   - Viol_17:             bigekotu
+   - Viol_18:             bidetoku
+   - Viol_19:             bigikuko
+   - Viol_20:             bidituto
+   - Viol_21:             bigekuko
+   - Viol_22:             gibepoto
+   - Viol_23:             gidetupo
+   - Viol_24:             gibipopu
+   - Viol_25:             gidituto
+   - Viol_26:             gidetotu
+   - Viol_27:             gibipupu
+   - Viol_28:             dibepoku
+   - Viol_29:             digekupo
+   - Viol_30:             dibepuko
+   - Viol_31:             digikopu
+   - Viol_32:             dibepupo
+
+categories:
+   Hab_be: [Hab_be_1, Hab_be_2, Hab_be_3, Hab_be_4, Hab_be_5, Hab_be_6, Hab_be_7, Hab_be_8, Hab_be_9, Hab_be_10, Hab_be_11, Hab_be_12, Hab_be_13, Hab_be_14, Hab_be_15, Hab_be_16] #all habituation string starting with be
+   Hab_ge: [Hab_ge_1, Hab_ge_2, Hab_ge_3, Hab_ge_4, Hab_ge_5, Hab_ge_6, Hab_ge_7, Hab_ge_8, Hab_ge_9, Hab_ge_10, Hab_ge_11, Hab_ge_12, Hab_ge_13, Hab_ge_14, Hab_ge_15, Hab_ge_16] #all habituation string starting with ge
+   Hab_de: [Hab_de_1, Hab_de_2, Hab_de_3, Hab_de_4, Hab_de_5, Hab_de_6, Hab_de_7, Hab_de_8, Hab_de_9, Hab_de_10, Hab_de_11, Hab_de_12, Hab_de_13, Hab_de_14, Hab_de_15, Hab_de_16] #all habituation string starting with de
+   Hab_bi: [Hab_bi_1, Hab_bi_2, Hab_bi_3, Hab_bi_4, Hab_bi_5, Hab_bi_6, Hab_bi_7, Hab_bi_8, Hab_bi_9, Hab_bi_10, Hab_bi_11, Hab_bi_12, Hab_bi_13, Hab_bi_14, Hab_bi_15, Hab_bi_16] #all habituation string starting with bi
+   Hab_gi: [Hab_gi_1, Hab_gi_2, Hab_gi_3, Hab_gi_4, Hab_gi_5, Hab_gi_6, Hab_gi_7, Hab_gi_8, Hab_gi_9, Hab_gi_10, Hab_gi_11, Hab_gi_12, Hab_gi_13, Hab_gi_14, Hab_gi_15, Hab_gi_16] #all habituation string starting with gi
+   Hab_di: [Hab_di_1, Hab_di_2, Hab_di_3, Hab_di_4, Hab_di_5, Hab_di_6, Hab_di_7, Hab_di_8, Hab_di_9, Hab_di_10, Hab_di_11, Hab_di_12, Hab_di_13, Hab_di_14, Hab_di_15, Hab_di_16] #all habituation string starting with di
+   Hab: [Hab_be, Hab_ge, Hab_de, Hab_bi, Hab_gi, Hab_di]   # all habituation strings
+   Viol: [Viol_1, Viol_2, Viol_3, Viol_4, Viol_5, Viol_6, Viol_7, Viol_8, Viol_9, Viol_10, Viol_11, Viol_12, Viol_13, Viol_14, Viol_15, Viol_16, Viol_17, Viol_18, Viol_19, Viol_20, Viol_21, Viol_22, Viol_23, Viol_24, Viol_25, Viol_26, Viol_27, Viol_28, Viol_29, Viol_30, Viol_31, Viol_32]    # Violation test strings
+
+
+
+categorycolors:
+   Hab: "#0071c1"
+   Viol: "#01b0f1"
+
+tokenintervalduration: 100
+
+stringduration: 200
