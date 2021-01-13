@@ -15,7 +15,7 @@ setuptools.setup(
     packages=['agldata', 'agldata.tests', 'datafiles'],
     package_data={'datafiles': ['datafiles/*.yaml']},
     url='',
-    license='BSD',
+    license='BSD-3',
     author='Gabriel Beckers ',
     author_email='g.j.l.beckers@uu.nl',
     description=description, requires=['pyyaml']
