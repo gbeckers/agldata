@@ -16,6 +16,15 @@ agldata is currently pre-1.0, still undergoing significant development. It is
 open source and freely available under the
 `New BSD License <https://opensource.org/licenses/BSD-3-Clause>`__ terms.
 
+This library is in aplha stage, is not ready and not fully tested. It should
+not be used for research yet. If you are nevertheless interested in using if
+for your research, consider collaborating with the main author of the library
+(see contact).
+
+Contact
+-------
+Gabriel Beckers, Utrecht University, https://www.gbeckers.nl
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

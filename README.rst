@@ -20,6 +20,11 @@ format (`YAML <https://yaml.org/>`__). See `example here
 
 Current version is: 0.1.0
 
+This library is in aplha stage, is not ready and not fully tested. It should
+not be used for research yet. If you are nevertheless interested in using if
+for your research, consider collaborating with the main author of the library
+(see contact).
+
 Install
 -------
 agldata depends on Python 3.6 or higher, and one external library (pyaml).
