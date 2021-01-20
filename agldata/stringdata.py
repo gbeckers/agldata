@@ -191,7 +191,8 @@ class StringLabelTuple:
         stringlabels = tuple(stringlabels)
         if stringdict is not None:
             if not set(stringlabels).issubset(stringdict):
-                raise ValueError('Not all strings are in stringdict')
+                raise ValueError(f'Not all stringlabels are keys in stringdict:'
+                                 f'{set(stringlabels).difference(stringdict)}')
             if readingframe is not None:
                 if readingframe != stringdict.readingframe:
                     raise ValueError(
