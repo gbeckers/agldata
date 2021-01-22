@@ -25,6 +25,7 @@ Contact
 -------
 Gabriel Beckers, Utrecht University, https://www.gbeckers.nl
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -44,4 +45,7 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Sound is BSD licensed (BSD 3-Clause License). (c) 2020, Gabriël Beckers
+Copyright and License
+---------------------
+:copyright: Copyright 2019-2021, Gabriel Beckers, Utrecht University.
+:license: 3-Clause Revised BSD License, see LICENSE.txt for details.
