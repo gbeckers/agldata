@@ -10,9 +10,6 @@ A python library for published data from artificial grammar learning or
 statistical learning studies. Data can be efficiently accessed in a
 structured way, for example to use them for (meta-) analyses.
 
-A first attempt to documentation can be found here:
-https://agldata.readthedocs.io/
-
 You can easily add data sets by entering them in a file in a user-friendly
 format (`YAML <https://yaml.org/>`__). See `example here
 <https://github.com/gbeckers/agldata/tree/master/agldata/datafiles
@@ -24,6 +21,11 @@ Current version is: 0.1.0
 not be used for research yet.** If you are nevertheless interested in using if
 for your research, consider collaborating with the main author of the library
 (see contact).
+
+Documentation
+-------------
+A first attempt to documentation can be found here:
+https://agldata.readthedocs.io/
 
 Install
 -------
@@ -62,19 +64,11 @@ If you want to remove the conda environment later::
 
 Contributing
 ------------
-To add data from studies (using the format described below) or to fix
-bugs/add functionality, it is best to use a the Github pull request workflow.
-It is described here:
+To add data from studies, see see https://agldata.readthedocs.io/en/latest/contributing.html
+for instructions on how to prepare data files.
+To get them merged into the library or to fix bugs/add functionality, it is best to use a the
+Github pull request workflow. It is described here:
 https://github.com/processing/processing/wiki/Contributing-to-Processing-with-Pull-Requests
-
-Design considerations
----------------------
-We chose YAML as format for data because it is universal and very easy to
-write and edit by hand. JSON would have been simpler for installation
-reasons as it is included in the standard library, while YAML depends on an
-external library, pyyaml. However, JSON requires more brackets etc, making it
-more error prone for use by humans who enter data. We want to minimize such
-errors.
 
 Included studies
 ----------------
@@ -136,20 +130,13 @@ Included studies
   Auditory sequence processing reveals evolutionarily conserved regions of
   frontal cortex in macaques and humans. Nat Commun 6:8901.
 
-Data format
------------
-
-See a `mock example here
-<https://github.com/gbeckers/agldata/tree/master/agldata/datafiles/mockexample
-.yaml>`__
-showing how to define data in a yaml file.
-
 
 Copyright and License
 ---------------------
-:copyright: Copyright 2019-2020 by Gabriel Beckers, Utrecht University.
+:copyright: Copyright 2019-2021, Gabriel Beckers, Utrecht University.
 :license: 3-Clause Revised BSD License, see LICENSE.txt for details.
 
+Data from original studies has been entered by: Gabriel Beckers, Simon Buil.
 
 Contact
 -------
