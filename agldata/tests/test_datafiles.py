@@ -14,4 +14,4 @@ class DataFiles(unittest.TestCase):
                      "categorycomparisons"}
         for study in availablestudies:
             for key in get_datadict(study).keys():
-                self.assertIn(key, validkeys)
+                self.assertIn(key, validkeys, msg=study)
