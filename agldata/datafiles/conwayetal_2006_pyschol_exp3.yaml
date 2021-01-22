@@ -14,19 +14,19 @@
 
 readingframe: 1
 
-A_tokens:      # grammar A tokens
-    - VOT: a
-    - PEL: b
-    - JIC: c
-    - RUD: d
-    - DAK: e
+#A_tokens:      # grammar A tokens
+#    - VOT: a
+#    - PEL: b
+#    - JIC: c
+#    - RUD: d
+#    - DAK: e
 
-B_tokens:      # grammar B tokens
-    - TOOD: x
-    - JEEN: m
-    - GENS: v
-    - TAM: t
-    - LEB: r
+#B_tokens:      # grammar B tokens
+#    - TOOD: x
+#    - JEEN: m
+#    - GENS: v
+#    - TAM: t
+#    - LEB: r
 
 strings:
     - Hab_a_1:          aac

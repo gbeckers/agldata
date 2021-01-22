@@ -5,12 +5,12 @@
 
 readingframe: 1
 
-tokens:
-    - VOT: a
-    - PEL: b
-    - JIC: c
-    - RUD: d
-    - TAM: e
+#tokens:
+#    - VOT: a
+#    - PEL: b
+#    - JIC: c
+#    - RUD: d
+#    - TAM: e
 
 strings:
     - Hab_a_1:          abc

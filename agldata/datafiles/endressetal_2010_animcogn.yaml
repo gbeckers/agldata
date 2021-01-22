@@ -9,17 +9,18 @@ strings:
    - Hab_4:            XXXABX
    - Viol_1:           AXXXXB
    - Viol_2:           BXXXXA
-   - Viol_3:           XXABXX
-   - Viol_4:           XXBAXX
-   - Viol_5:           XXAXBX
-   - Viol_6:           XXBXAX
+   - New_1:            XXABXX
+   - Viol_3:           XXBAXX
+   - New_2:            XXAXBX
+   - Viol_4:           XXBXAX
 
 categories:
    Hab: [Hab_1, Hab_2, Hab_3, Hab_4]
-   Viol: [Fam_1, Fam_2]               # Violating test strings
+   Viol: [Viol_1, Viol_2, Viol_3, Viol_4]               # Violating test strings
+   New: [New_1, New_2]               # Correct test strings
 
 categorycolors:
-   Fam: "#0071c1"
+   Hab: "#0071c1"
    Viol: "#01b0f1"
 
 

@@ -99,6 +99,7 @@ categories:
    Hab_6: [Hab_6_1, Hab_6_2, Hab_6_3, Hab_6_4, Hab_6_5, Hab_6_6, Hab_6_7, Hab_6_8] #habituation string consisting of 3 numbers
    Hab_7: [Hab_7_1, Hab_7_2, Hab_7_3, Hab_7_4, Hab_7_5, Hab_7_6, Hab_7_7, Hab_7_8] #habituation string consisting of 3 numbers
    Hab_8: [Hab_8_1, Hab_8_2, Hab_8_3, Hab_8_4, Hab_8_5, Hab_8_6, Hab_8_7, Hab_8_8] #habituation string consisting of 3 numbers
+   Hab: [Hab_3, Hab_4, Hab_5, Hab_6, Hab_7, Hab_8]
    Novel_4: [Novel_4_1, Novel_4_2, Novel_4_3, Novel_4_4]         # Novel correct test strings consisting of 4 numbers
    Novel_5: [Novel_5_1, Novel_5_2, Novel_5_3, Novel_5_4]         # Novel correct test strings consisting of 5 numbers
    Novel_6: [Novel_6_1, Novel_6_2, Novel_6_3, Novel_6_4]         # Novel correct test strings consisting of 6 numbers

@@ -2,104 +2,107 @@
 # (2008). Artificial grammar learning in pigeons. Learning &
 # Behavior, 36(2), 116-137. experiment 1
 
+# T = Q
 
 readingframe: 1
 
 strings:
-   - Gram_1:			VTS
-   - Gram_2:			VTPS
-   - Gram_3:			TXTPS
-   - Gram_4:			TXSPVS
-   - Gram_5:			VSPXTS
-   - Gram_6:			TVPPPPS
-   - Gram_7:			TXSXPVS
-   - Gram_8:			VSXPXTS
-   - Gram_9:			VSPVPPS
-   - Gram_10:			VSXXPVS
-   - Gram_11:			TXSPVPPS
-   - Gram_12:			TXSXXPVS
-   - Gram_13:			VSXPXTPS
-   - Gram_14:			VTPPPPPS
-   - Gram_15:			VSXPVPPS
-   - Gram_16:			VSXXXPVS
-   - Gram_17:			TXTS
-   - Gram_18:			TVPPS
-   - Gram_19:			TVPPPS
-   - Gram_20:			TXTPPS
-   - Gram_21:			VTPPPS
-   - Gram_22:			TXSPVPS
-   - Gram_23:			TXTPPPS
-   - Gram_24:			VTPPPPS
-   - Gram_25:			VSXPVPS
-   - Gram_26:			TVPPPPPS
-   - Gram_27:			TXSXPVPS
-   - Gram_28:			TXTPPPPS
-   - Gram_29:			VSXXPXTS
-   - Gram_30:			VSPVPPPS
-   - Gram_31:			VSXXPVPS
-   - NGram_1:			VVS
-   - NGram_2:			TPPTS
-   - BGram_3:			VXXVS
-   - BGram_4:			TPTXVS
-   - BGram_5:			TTXVPS
-   - BGram_6:			TPPPPTS
-   - BGram_7:			TTXXXVS
-   - BGram_8:			VXVPXVS
-   - BGram_9:			VVPXVPS
-   - BGram_10:			TPPPPPTS
-   - BGram_11:			TPTXXXVS
-   - BGram_12:			TPPTXVPS
-   - BGram_13:			TTXXXVPS
-   - BGram_14:			VXXVPXVS
-   - BGram_15:			VVPXXVPS
-   - BGram_16:			VXXXXVPS
-   - BGram_17:			VVPS
-   - BGram_18:			TTXVS
-   - BGram_19:			TPPPTS
-   - BGram_20:			TTXXVS
-   - BGram_21:			VXXXVS
-   - BGram_22:			TPTXXVS
-   - BGram_23:			TPTXVPS
-   - BGram_24:			VXXXXVS
-   - BGram_25:			VXXXVPS
-   - BGram_26:			TPPTXXVS
-   - BGram_27:			TTXXXXVS
-   - BGram_28:			TPTXXVPS
-   - BGram_29:			VXVPXXVS
-   - BGram_30:			VXXXXXVS
-   - BGram_31:			VXVPXVPS
-   - T_S_Gram_1:		TVPS
-   - T_S_Gram_2:		VTPPS
-   - T_S_Gram_3:		VSPVPS
-   - T_S_Gram_4:		VSXPVS
-   - T_S_Gram_5:		TXSPXTS
-   - T_S_Gram_6:		VSPXTPS
-   - T_NS_Gram_7:		TVS
-   - T_NS_Gram_8:		VSPVS
-   - T_NS_Gram_9:		TXSPXTPS
-   - T_NS_Gram_10:		TXSXPXTS
-   - T_NS_Gram_11:		VSPXTPPS
-   - T_NS_Gram_12:		VSPXSPVS
-   - T_S_BGram_1:		VXS
-   - T_S_BGram_2:		VVPS
-   - T_S_BGram_3:		TXTTS
-   - T_S_BGram_4:		TVPPPVS
-   - T_S_BGram_5:		TVSPVPPS
-   - T_S_BGram_6:		TSXXXPVS
-   - T_NS_BGram_7:		VVPXS
-   - T_NS_BGram_8:		TPVPPS
-   - T_NS_BGram_9:		TSPPPS
-   - T_NS_BGram_10:		VXSPVSS
-   - T_NS_BGram_11:		VVSPVPS
-   - T_NS_BGram_12:		TSXSPXTS
+   - gram_1:          vqs
+   - gram_2:          vqps
+   - gram_3:          qxqps
+   - gram_4:          qxspvs
+   - gram_5:          vspxqs
+   - gram_6:          qvpppps
+   - gram_7:          qxsxpvs
+   - gram_8:          vsxpxqs
+   - gram_9:          vspvpps
+   - gram_10:         vsxxpvs
+   - gram_11:         qxspvpps
+   - gram_12:         qxsxxpvs
+   - gram_13:         vsxpxqps
+   - gram_14:         vqppppps
+   - gram_15:         vsxpvpps
+   - gram_16:         vsxxxpvs
+   - gram_17:         qxqs
+   - gram_18:         qvpps
+   - gram_19:         qvppps
+   - gram_20:         qxqpps
+   - gram_21:         vqppps
+   - gram_22:         qxspvps
+   - gram_23:         qxqppps
+   - gram_24:         vqpppps
+   - gram_25:         vsxpvps
+   - gram_26:         qvppppps
+   - gram_27:         qxsxpvps
+   - gram_28:         qxqpppps
+   - gram_29:         vsxxpxqs
+   - gram_30:         vspvppps
+   - gram_31:         vsxxpvps
+   - bgram_1:         vvs
+   - bgram_2:         vxspvs
+   - bgram_3:         vssvps
+   - bgram_4:         qxspxss
+   - bgram_5:         vspqpps
+   - bgram_6:         qppppqs
+   - bgram_7:         vsxvxqps
+   - bgram_8:         vxpxqpps
+   - bgram_9:         qpvs
+   - bgram_10:        vsqqs
+   - bgram_11:        qqxpvs
+   - bgram_12:        qqpppvs
+   - bgram_13:        vssxpvps
+   - bgram_14:        qsqpppss
+   - bgram_15:        qsxxpvqs
+   - bgram_16:        vxppppps
+   - bgram_17:        qxps
+   - bgram_18:        qspxqs
+   - bgram_19:        qpsxpvs
+   - bgram_20:        vsxxxqs
+   - bgram_21:        vsxspvs
+   - bgram_22:        qxspxqvs
+   - bgram_23:        vqpsppps
+   - bgram_24:        qsxpvpps
+   - bgram_25:        qqpss
+   - bgram_26:        qvqpvs
+   - bgram_27:        qqqppvs
+   - bgram_28:        qvpxqps
+   - bgram_29:        vvpqppps
+   - bgram_30:        qxsxpxps
+   - bgram_31:        qxpxspvs
+   - t_s_gram_1:      qvps
+   - t_s_gram_2:      vqpps
+   - t_s_gram_3:      vspvps
+   - t_s_gram_4:      vsxpvs
+   - t_s_gram_5:      qxspxqs
+   - t_s_gram_6:      vspxqps
+   - t_ns_gram_1:     qvs
+   - t_ns_gram_2:     vspvs
+   - t_ns_gram_3:     qxspxqps
+   - t_ns_gram_4:     qxsxpxqs
+   - t_ns_gram_5:     vspxqpps
+   - t_ns_gram_6:     vspxspvs
+   - t_s_bgram_1:     vxs
+   - t_s_bgram_2:     vvps
+   - t_s_bgram_3:     qxqqs
+   - t_s_bgram_4:     qvpppvs
+   - t_s_bgram_5:     qvspvpps
+   - t_s_bgram_6:     qsxxxpvs
+   - t_ns_bgram_1:    vvpxs
+   - t_ns_bgram_2:    qpvpps
+   - t_ns_bgram_3:    qsppps
+   - t_ns_bgram_4:    vxspvss
+   - t_ns_bgram_5:    vvspvps
+   - t_ns_bgram_6:    qsxspxqs
+
+
 
 categories:
-   Gram: [Gram_1, Gram_2, Gram_3, Gram_4, Gram_5, Gram_6, Gram_7, Gram_8, Gram_9, Gram_10, Gram_11, Gram_12, Gram_13, Gram_14, Gram_15, Gram_16, Gram_17, Gram_18, Gram_19, Gram_20, Gram_21, Gram_22, Gram_23, Gram_24, Gram_25, Gram_26, Gram_27, Gram_28, Gram_29, Gram_30, Gram_31] # grammatically correct strings
-   BGram: [BGram_1, BGram_2, BGram_3, BGram_4, BGram_5, BGram_6, BGram_7, BGram_8, BGram_9, BGram_10, BGram_11, BGram_12, BGram_13, BGram_14, BGram_15, BGram_16, BGram_17, BGram_18, BGram_19, BGram_20, BGram_21, BGram_22, BGram_23, BGram_24, BGram_25, BGram_26, BGram_27, BGram_28, BGram_29, BGram_30, BGram_31] #  strings that follow grammar B
-   T_S_Gram: [T_S_Gram_1, T_S_Gram_2, T_S_Gram_3, T_S_Gram_4, T_S_Gram_5, T_S_Gram_6]         # Test string with a similar a-style grammar
-   T_NS_Gram: [T_NS_Gram_1, T_NS_Gram_2, T_NS_Gram_3, T_NS_Gram_4, T_NS_Gram_5, T_NS_Gram_6]         # Test string with a non-similar a-style grammar
-   T_S_NGram: [T_S_BGram_1, T_S_BGram_2, T_S_BGram_3, T_S_BGram_4, T_S_BGram_5, T_S_BGram_6]         # Test string with a similar but flawed b-style grammar
-   T_NS_NGram: [T_NS_BGram_1, T_NS_BGram_2, T_NS_BGram_3, T_NS_BGram_4, T_NS_BGram_5, T_NS_BGram_6]         # Test string with a non-similar b-style grammar
+   gram: [gram_1, gram_2, gram_3, gram_4, gram_5, gram_6, gram_7, gram_8, gram_9, gram_10, gram_11, gram_12, gram_13, gram_14, gram_15, gram_16, gram_17, gram_18, gram_19, gram_20, gram_21, gram_22, gram_23, gram_24, gram_25, gram_26, gram_27, gram_28, gram_29, gram_30, gram_31] # grammatically correct strings
+   bgram: [bgram_1, bgram_2, bgram_3, bgram_4, bgram_5, bgram_6, bgram_7, bgram_8, bgram_9, bgram_10, bgram_11, bgram_12, bgram_13, bgram_14, bgram_15, bgram_16, bgram_17, bgram_18, bgram_19, bgram_20, bgram_21, bgram_22, bgram_23, bgram_24, bgram_25, bgram_26, bgram_27, bgram_28, bgram_29, bgram_30, bgram_31] #  strings that follow grammar b
+   t_s_gram: [t_s_gram_1, t_s_gram_2, t_s_gram_3, t_s_gram_4, t_s_gram_5, t_s_gram_6]         # test string with a similar a-style grammar
+   t_ns_gram: [t_ns_gram_1, t_ns_gram_2, t_ns_gram_3, t_ns_gram_4, t_ns_gram_5, t_ns_gram_6]         # test string with a non-similar a-style grammar
+   t_s_ngram: [t_s_bgram_1, t_s_bgram_2, t_s_bgram_3, t_s_bgram_4, t_s_bgram_5, t_s_bgram_6]         # test string with a similar but flawed b-style grammar
+   t_ns_ngram: [t_ns_bgram_1, t_ns_bgram_2, t_ns_bgram_3, t_ns_bgram_4, t_ns_bgram_5, t_ns_bgram_6]         # test string with a non-similar b-style grammar
 
 
 
