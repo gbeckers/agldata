@@ -2,6 +2,8 @@
 agldata
 =======
 
+|Docs Status|
+
 .. contents::
 
 What is agldata?
@@ -141,3 +143,7 @@ Data from original studies has been entered by: Gabriel Beckers, Simon Buil.
 Contact
 -------
 Gabriel Beckers, Utrecht University, https://www.gbeckers.nl
+
+.. |Docs Status| image:: https://readthedocs.org/projects/agldata/badge/?version=latest
+   :target: https://agldata.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
