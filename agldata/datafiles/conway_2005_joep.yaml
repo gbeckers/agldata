@@ -1,0 +1,59 @@
+# The strings sets originate from: Newport, Conway, C. M., & Christiansen, M. H. (2005). Modality-constrained
+# statistical learning of tactile, visual, and auditory sequences. Journal of Experimental Psychology: Learning, Memory, and Cognition, 31(1), 24.
+# psychology, 49(2), 85-117.
+
+# Same stimuli was used in C.M. Conway, M.H. Christiansen
+#Seeing and hearing in space and time: effects of modality and presentation rate on implicit statistical learning
+#Eur J Cogn Psychol, 21 (2009), pp. 561-580
+
+# this study takes place in 3 domains; visual, auditory and tactile. The numbers in the string can correspond to all 3
+
+
+readingframe: 1
+
+strings:
+   - Hab_1:            abaaac
+   - Hab_2:            daaceb
+   - Hab_3:            daceb
+   - Hab_4:            abeee
+   - Hab_5:            dac
+   - Hab_6:            abc
+   - Hab_7:            abcebe
+   - Hab_8:            abcebc
+   - Hab_9:            dcebc
+   - Hab_10:           dcebe
+   - Hab_11:           abee
+   - Hab_12:           abac
+   - Fam_1:            dacebc
+   - Fam_2:            abaceb
+   - Fam_3:            dcebee
+   - Fam_4:            dacebe
+   - Fam_5:            daaac
+   - Fam_6:            abaac
+   - Fam_7:            abceb
+   - Fam_8:            daac
+   - Fam_9:            dceb
+   - Fam_10:           abe
+   - Ille_1:           adeabc
+   - Ille_2:           deabac
+   - Ille_3:           dbacae
+   - Ille_4:           aecdb
+   - Ille_5:           dbaec
+   - Ille_6:           aecab
+   - Ille_7:           deac
+   - Ille_8:           debb
+   - Ille_9:           adb
+   - Ille_10:          aeccbb
+
+
+categories:
+   Hab: [Hab_1, Hab_2, Hab_3, Hab_4, Hab_5, Hab_6, Hab_7, Hab_8, Hab_9, Hab_10, Hab_11, Hab_12]  # habituation strings
+   Fam: [Fam_1, Fam_2, Fam_3, Fam_4, Fam_5, Fam_6, Fam_7, Fam_8, Fam_9, Fam_10]                  # Familiar test strings
+   Ille: [Ille_1, Ille_2, Ille_3, Ille_4, Ille_5, Ille_6, Ille_7, Ille_8, Ille_9, Ille_10]       # Illegal test strings
+
+
+categorycolors:
+   Fam: "#0071c1"
+   Ille: "#01b0f1"
+
+tokenintervalduration: 0
