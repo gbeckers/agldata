@@ -9,6 +9,9 @@ To add studies, you create a text file in YAML format following the a `mock exam
 <https://github.com/gbeckers/agldata/tree/master/agldata/datafiles/mockexample
 .yaml>`__ and place it in the 'datafiles' directory.
 
+Make sure you tell your text editor to use UTF-8 text encoding for your file, if it is not
+using that already as default.
+
 Use filenames in the following format, all lowercase (see for examples the `datafiles` directory):
 
 authors_year_journal_suffix.yaml

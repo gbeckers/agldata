@@ -1,6 +1,8 @@
 import yaml
 from pathlib import Path
 
+#TODO: encode all data files as UTF-8
+
 __all__ = ['get_datadict', 'availablestudies']
 
 datadir = Path(__file__).parent
