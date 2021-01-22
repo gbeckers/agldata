@@ -8,3 +8,16 @@ https://github.com/processing/processing/wiki/Contributing-to-Processing-with-Pu
 To add studies, you create a text file in YAML format following the a `mock example here
 <https://github.com/gbeckers/agldata/tree/master/agldata/datafiles/mockexample
 .yaml>`__ and place it in the 'datafiles' directory.
+
+Use filenames in the following format, all lowercase (see for examples the `datafiles` directory):
+
+authors_year_journal_suffix.yaml
+
+Mention in the comments section at the beginning of the file:
+
+1) who entered the data and when
+2) what the source of that data was
+3) who independently reviewed the entered data (if anyone)
+4) any updates / fixes
+
+
