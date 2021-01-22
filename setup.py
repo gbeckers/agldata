@@ -36,5 +36,6 @@ setuptools.setup(
     author='Gabriel Beckers ',
     author_email='g.j.l.beckers@uu.nl',
     description=description,
-    requires=['pyyaml']
+    requires=['pyyaml'],
+    install_requires=['pyyaml']
 )
