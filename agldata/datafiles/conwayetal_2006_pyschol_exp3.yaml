@@ -56,7 +56,7 @@ strings:
     - Novel_7:          xmvrtxm
     - Novel_8:          xmvrtxm
     - Novel_9:          vvrttxm
-    - Novel_9:          xmrvrxm
+    - Novel_10:         xmrvrxm
     - Viol_1:           vtvm
     - Viol_2:           vvtm
     - Viol_3:           xmmxm
@@ -75,8 +75,8 @@ categories:
     Novel: [Novel_1, Novel_2, Novel_3, Novel_4, Novel_5, Novel_6, Novel_7, Novel_8, Novel_9, Novel_10]         # Novel correct test strings for set grammar B
     Viol: [Viol_1, Viol_2, Viol_3, Viol_4, Viol_5, Viol_6, Viol_7, Viol_8, Viol_9, Viol_10]         # Violating strings on the basis of grammar B
 
-tokenduration: 500
+# tokenduration: 500
 
-tokenintervalduration: 100
+# tokenintervalduration: 100
 
-stringinterval: 1700
+# stringinterval: 1700

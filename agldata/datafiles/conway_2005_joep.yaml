@@ -12,38 +12,39 @@
 readingframe: 1
 
 strings:
-   - Hab_1:            121113
-   - Hab_2:            411352
-   - Hab_3:            41352
-   - Hab_4:            12555
-   - Hab_5:            413
-   - Hab_6:            123
-   - Hab_7:            123525
-   - Hab_8:            123523
-   - Hab_9:            43523
-   - Hab_10:           43525
-   - Hab_11:           1255
-   - Hab_12:           1213
-   - Fam_1:            413523
-   - Fam_2:            121352
-   - Fam_3:            435255
-   - Fam_4:            413525
-   - Fam_5:            41113
-   - Fam_6:            12113
-   - Fam_7:            12352
-   - Fam_8:            4113
-   - Fam_9:            4352
-   - Fam_10:           125
-   - Ille_1:           145123
-   - Ille_2:           451213
-   - Ille_3:           421315
-   - Ille_4:           15342
-   - Ille_5:           42153
-   - Ille_6:           15312
-   - Ille_7:           4513
-   - Ille_8:           4522
-   - Ille_9:           142
-   - Ille_10:          153322
+   - Hab_1:            abaaac
+   - Hab_2:            daaceb
+   - Hab_3:            daceb
+   - Hab_4:            abeee
+   - Hab_5:            dac
+   - Hab_6:            abc
+   - Hab_7:            abcebe
+   - Hab_8:            abcebc
+   - Hab_9:            dcebc
+   - Hab_10:           dcebe
+   - Hab_11:           abee
+   - Hab_12:           abac
+   - Fam_1:            dacebc
+   - Fam_2:            abaceb
+   - Fam_3:            dcebee
+   - Fam_4:            dacebe
+   - Fam_5:            daaac
+   - Fam_6:            abaac
+   - Fam_7:            abceb
+   - Fam_8:            daac
+   - Fam_9:            dceb
+   - Fam_10:           abe
+   - Ille_1:           adeabc
+   - Ille_2:           deabac
+   - Ille_3:           dbacae
+   - Ille_4:           aecdb
+   - Ille_5:           dbaec
+   - Ille_6:           aecab
+   - Ille_7:           deac
+   - Ille_8:           debb
+   - Ille_9:           adb
+   - Ille_10:          aeccbb
+
 
 categories:
    Hab: [Hab_1, Hab_2, Hab_3, Hab_4, Hab_5, Hab_6, Hab_7, Hab_8, Hab_9, Hab_10, Hab_11, Hab_12]  # habituation strings

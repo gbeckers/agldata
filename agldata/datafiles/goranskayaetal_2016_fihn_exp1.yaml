@@ -151,15 +151,8 @@ categories:
    Hab_bi: [Hab_bi_1, Hab_bi_2, Hab_bi_3, Hab_bi_4, Hab_bi_5, Hab_bi_6, Hab_bi_7, Hab_bi_8, Hab_bi_9, Hab_bi_10, Hab_bi_11, Hab_bi_12, Hab_bi_13, Hab_bi_14, Hab_bi_15, Hab_bi_16] #all habituation string starting with bi
    Hab_gi: [Hab_gi_1, Hab_gi_2, Hab_gi_3, Hab_gi_4, Hab_gi_5, Hab_gi_6, Hab_gi_7, Hab_gi_8, Hab_gi_9, Hab_gi_10, Hab_gi_11, Hab_gi_12, Hab_gi_13, Hab_gi_14, Hab_gi_15, Hab_gi_16] #all habituation string starting with gi
    Hab_di: [Hab_di_1, Hab_di_2, Hab_di_3, Hab_di_4, Hab_di_5, Hab_di_6, Hab_di_7, Hab_di_8, Hab_di_9, Hab_di_10, Hab_di_11, Hab_di_12, Hab_di_13, Hab_di_14, Hab_di_15, Hab_di_16] #all habituation string starting with di
-   Hab: [Hab_be, Hab_ge, Hab_de, Hab_bi, Hab_gi, Hab_di]   # all habituation strings
+#   Hab: [Hab_be, Hab_ge, Hab_de, Hab_bi, Hab_gi, Hab_di]   # all habituation strings
    Viol: [Viol_1, Viol_2, Viol_3, Viol_4, Viol_5, Viol_6, Viol_7, Viol_8, Viol_9, Viol_10, Viol_11, Viol_12, Viol_13, Viol_14, Viol_15, Viol_16, Viol_17, Viol_18, Viol_19, Viol_20, Viol_21, Viol_22, Viol_23, Viol_24, Viol_25, Viol_26, Viol_27, Viol_28, Viol_29, Viol_30, Viol_31, Viol_32]    # Violation test strings
 
 
 
-categorycolors:
-   Hab: "#0071c1"
-   Viol: "#01b0f1"
-
-tokenintervalduration: 100
-
-stringduration: 200
