@@ -1,0 +1,31 @@
+# The strings sets originate from: Hauser MD, Newport EL, Aslin RN (2001) Segmentation of the speech stream
+# in a non-human primate: statistical learning in cotton-top tamarins. Cognition 78:B53–B64 language B
+
+# This study is separated on the basis of two different AGL that were used. THis file contains language A
+
+readingframe: 2
+
+strings:
+   - Hab_1:            tupiro
+   - Hab_2:            golabu
+   - Hab_3:            bidaku
+   - Hab_4:            padoti
+   - Test_1:           tupiro
+   - Test_2:           golabu
+   - Non_1:            dapiku
+   - Non_2:            tilado
+   - Part_1:           tibida
+   - Part_2:           kupado
+
+categories:
+   Hab: [Hab_1, Hab_2, Hab_3, Hab_4]
+   Test: [Test_1, Test_2]               # Familiar test strings
+   Non: [Non_1, Non_2]           # Novel incorrect test strings
+   Part: [Part_1, Part_2]     # Part words, comparable but slightly different
+
+categorycolors:
+   Fam: "#0071c1"
+   Test: "#01b0f1"
+   Non: "#c00000"
+   Part: "#fe0000"
+
