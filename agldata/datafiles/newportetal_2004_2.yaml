@@ -1,0 +1,49 @@
+# The strings sets originate from: Newport, E. L., Hauser, M. D., Spaepen, G., & Aslin, R. N. (2004). Learning
+#at a distance II. Statistical learning of non-adjacent dependencies in a non-human primate. Cognitive
+# psychology, 49(2), 85-117.
+
+# follow-up study of Newport & Aslin (2004), stimuli look a lot a like but differ on some point
+
+# in contrary to previous study, this study also looked at cotton-top tamarins
+
+# tae = ta
+# bea = ba
+
+readingframe: 2
+
+strings:
+   - Hab_A_1:            dikita
+   - Hab_A_2:            diguta
+   - Hab_A_3:            pokiga
+   - Hab_A_4:            poguga
+   - Hab_A_5:            kekibu
+   - Hab_A_6:            kegubu
+   - Hab_B_1:            bapaku
+   - Hab_B_2:            babeku
+   - Hab_B_3:            tepada
+   - Hab_B_4:            tebeda
+   - Hab_B_5:            gopapi
+   - Hab_B_6:            gobepi
+   - Test_A_1:           diguta
+   - Test_A_2:           pokiga
+   - Test_B_1:           bapaku
+   - Test_B_2:           gobepi
+   - Part_A_1:           bupoki
+   - Part_A_2:           takegu
+   - Part_B_1:           dagobe
+   - Part_B_2:           kutepa
+
+
+categories:
+   Hab_A: [ Hab_A_1, Hab_A_2, Hab_A_3, Hab_A_4, Hab_A_5, Hab_A_6]         # habituation string from language A
+   Hab_B: [ Hab_B_1, Hab_B_2, Hab_B_3, Hab_B_4, Hab_B_5, Hab_B_6]         # habituation string from language B
+   Test_A: [Test_A_1, Test_A_2]    # test strings for language A
+   Test_B: [Test_B_1, Test_B_2]    # test strings for language B
+   Part_A: [Part_A_1, Part_A_2]    # part word strings for language A
+   Part_B: [Part_B_1, Part_B_2]    # part word strings for language A              # part words test strings
+
+
+categorycolors:
+   Fam: "#0071c1"
+   Part: "#01b0f1"
+
