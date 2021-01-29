@@ -1,0 +1,66 @@
+# The strings sets originate from: Newport, Conway, C. M., & Christiansen, M. H. (2005). Modality-constrained
+# statistical learning of tactile, visual, and auditory sequences. Journal of Experimental Psychology:
+# Learning, Memory, and Cognition, 31(1), 24. Experiment 1
+
+# Same stimuli was used in Conway, C. M., & Christiansen, M. H. (2009). Seeing and hearing in space
+# and time: Effects of modality and presentation rate on implicit statistical learning. European
+# Journal of Cognitive Psychology, 21(4), 561-580.
+
+# The grammar is based upon the same structure as Gomez and Gerken (1999)
+
+# They didn't not use sounds or pictures but electric stimulation to the fingers.
+# In experiments 1b & 1c the electric stimulation was replaced by pictures and sounds respectively
+# the grammar rules and stimuli were the same
+
+# during habituation pairs were use
+# a pair existed either out twice the same string or slight differences between the two strings.
+
+# a mismatch pair consisted of two strings that were present in two pairs, a string in a matched pair only
+# appeared in that pair.
+
+# discrimination between the two string was not recorded and the ony purpose was that the participant was paying attention
+
+# both strings in each pair were in line with the grammar.
+
+readingframe: 1
+
+strings:
+   - Hab_M_1:            ABAAAC
+   - Hab_M_2:            DAACEB
+   - Hab_M_3:            DACEB
+   - Hab_M_4:            ABEEE
+   - Hab_M_5:            DAC
+   - Hab_M_6:            ABC
+   - Hab_MM_1:           ABCEBE
+   - Hab_MM_2:           ABCEBC
+   - Hab_MM_3:           DCEBC
+   - Hab_MM_4:           DCEBE
+   - Hab_MM_5:           ABEE
+   - Hab_MM_6:           ABAC
+   - Novel_1:            DACEBC
+   - Novel_2:            ABACEB
+   - Novel_3:            DCEBEE
+   - Novel_4:            DACEBE
+   - Novel_5:            DAAAC
+   - Novel_6:            ABAAC
+   - Novel_7:            ABCEB
+   - Novel_8:            DAAC
+   - Novel_9:            DCEB
+   - Novel_10:           ABE
+   - Illegal_1:          ADEACC
+   - Illegal_2:          DEABAC
+   - Illegal_3:          DBACAE
+   - Illegal_4:          AECCBB
+   - Illegal_5:          AECDB
+   - Illegal_6:          DBAEC
+   - Illegal_7:          AECAB
+   - Illegal_8:          DEAC
+   - Illegal_9:          DEBB
+   - Illegal_10:         ADB
+
+
+categories:
+   Hab_M: [Hab_M_1, Hab_M_2, Hab_M_3, Hab_M_4, Hab_M_5, Hab_M_6]  # all habituation string from a matched pair
+   Hab_MM: [Hab_MM_1, Hab_MM_2, Hab_MM_3, Hab_MM_4, Hab_MM_5, Hab_MM_6]  # all habituation string from a mismatched pair
+   Novel: [Novel_1, Novel_2, Novel_3, Novel_4, Novel_5, Novel_6, Novel_7, Novel_8, Novel_9, Novel_10]    # Novel test strings
+   Illegal: [Illegal_1, Illegal_2, Illegal_3, Illegal_4, Illegal_5, Illegal_6, Illegal_7, Illegal_8, Illegal_9, Illegal_10]    # Illegal test strings
