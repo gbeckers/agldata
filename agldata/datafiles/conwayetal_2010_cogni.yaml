@@ -1,0 +1,113 @@
+# The strings sets originate from: Conway, C. M., Bauernschmidt, A.,
+# Huang, S. S., & Pisoni, D. B. (2010). Implicit statistical learning
+# in language processing: Word predictability is the key. Cognition, 114(3), 356-371.
+
+strings:
+   - Hab_3_1:            DAB
+   - Hab_3_2:            ACD
+   - Hab_3_3:            BCD
+   - Hab_3_4:            CDA
+   - Hab_3_5:            DAC
+   - Hab_3_6:            ACA
+   - Hab_3_7:            ABC
+   - Hab_3_8:            BCA
+   - Hab_4_1:            DABC
+   - Hab_4_2:            CDAC
+   - Hab_4_3:            CACA
+   - Hab_4_4:            BCAB
+   - Hab_4_5:            ABCD
+   - Hab_4_6:            BCAC
+   - Hab_4_7:            CDAB
+   - Hab_4_8:            BCDA
+   - Hab_5_1:            BCACD
+   - Hab_5_2:            ABCDA
+   - Hab_5_3:            CDACA
+   - Hab_5_4:            DABCA
+   - Hab_5_5:            BCDAC
+   - Hab_5_6:            CDACD
+   - Hab_5_7:            DABCD
+   - Hab_5_8:            BCABC
+   - Hab_6_1:            BCDACD
+   - Hab_6_2:            CACDAC
+   - Hab_6_3:            ABCDAB
+   - Hab_6_4:            BCDBCA
+   - Hab_6_5:            ACDABC
+   - Hab_6_6:            DABCDA
+   - Hab_6_7:            ACABCD
+   - Hab_6_8:            BCDACA
+   - Hab_7_1:            DACDACA
+   - Hab_7_2:            CACACAC
+   - Hab_7_3:            ABCDACA
+   - Hab_7_4:            DABCDAB
+   - Hab_7_5:            CDACABC
+   - Hab_7_6:            BCACACD
+   - Hab_7_7:            ACACDAB
+   - Hab_7_8:            CACDABC
+   - Hab_8_1:            BCDACDAB
+   - Hab_8_2:            ACACDABC
+   - Hab_8_3:            CACDACDA
+   - Hab_8_4:            CDACDACD
+   - Hab_8_5:            DABCACDA
+   - Hab_8_6:            BCDABCAC
+   - Hab_8_7:            ABCDABCA
+   - Hab_8_8:            CACACDAB
+   - Novel_4_1:          ABCA
+   - Novel_4_2:          ACDA
+   - Novel_4_3:          DACD
+   - Novel_4_4:          DACA
+   - Viol_4_1:           ADCD
+   - Viol_4_2:           BABD
+   - Viol_4_3:           DBDC
+   - Viol_4_4:           ADAB
+   - Novel_5_1:          DACDA
+   - Novel_5_2:          BCDAB
+   - Novel_5_3:          CDABC
+   - Novel_5_4:          DACAC
+   - Viol_5_1:           DABCB
+   - Viol_5_2:           ABACA
+   - Viol_5_3:           ADBCA
+   - Viol_5_4:           CADBD
+   - Novel_6_1:          BCDABC
+   - Novel_6_2:          CDABCA
+   - Novel_6_3:          BCACAB
+   - Novel_6_4:          CACACA
+   - Viol_6_1:           BADACB
+   - Viol_6_2:           DACDCB
+   - Viol_6_3:           CABCDC
+   - Viol_6_4:           BABACD
+   - Novel_7_1:          CDACDAC
+   - Novel_7_2:          ABCDABC
+   - Novel_7_3:          CACABCD
+   - Novel_7_4:          BCABCAB
+   - Viol_7_1:           BCABCAC
+   - Viol_7_2:           BCBDCDB
+   - Viol_7_3:           DCDBCBD
+   - Viol_7_4:           DCACBDC
+   - Novel_8_1:          CDABCABC
+   - Novel_8_2:          BCDBCDCD
+   - Novel_8_3:          ABCDABCD
+   - Novel_8_4:          CDABCDAB
+   - Viol_8_4:           ACADCABD
+   - Viol_8_2:           DCDBCDBD
+   - Viol_8_3:           BDBABABC
+   - Viol_8_4:           BCBCADBD
+
+
+categories:
+   Hab_3: [Hab_3_1, Hab_3_2, Hab_3_3, Hab_3_4, Hab_3_5, Hab_3_6, Hab_3_7, Hab_3_8] #habituation string consisting of 3 numbers
+   Hab_4: [Hab_4_1, Hab_4_2, Hab_4_3, Hab_4_4, Hab_4_5, Hab_4_6, Hab_4_7, Hab_4_8] #habituation string consisting of 4 numbers
+   Hab_5: [Hab_5_1, Hab_5_2, Hab_5_3, Hab_5_4, Hab_5_5, Hab_5_6, Hab_5_7, Hab_5_8] #habituation string consisting of 3 numbers
+   Hab_6: [Hab_6_1, Hab_6_2, Hab_6_3, Hab_6_4, Hab_6_5, Hab_6_6, Hab_6_7, Hab_6_8] #habituation string consisting of 3 numbers
+   Hab_7: [Hab_7_1, Hab_7_2, Hab_7_3, Hab_7_4, Hab_7_5, Hab_7_6, Hab_7_7, Hab_7_8] #habituation string consisting of 3 numbers
+   Hab_8: [Hab_8_1, Hab_8_2, Hab_8_3, Hab_8_4, Hab_8_5, Hab_8_6, Hab_8_7, Hab_8_8] #habituation string consisting of 3 numbers
+   Novel_4: [Novel_4_1, Novel_4_2, Novel_4_3, Novel_4_4]         # Novel correct test strings consisting of 4 numbers
+   Novel_5: [Novel_5_1, Novel_5_2, Novel_5_3, Novel_5_4]         # Novel correct test strings consisting of 5 numbers
+   Novel_6: [Novel_6_1, Novel_6_2, Novel_6_3, Novel_6_4]         # Novel correct test strings consisting of 6 numbers
+   Novel_7: [Novel_7_1, Novel_7_2, Novel_7_3, Novel_7_4]         # Novel correct test strings consisting of 7 numbers
+   Novel_8: [Novel_8_1, Novel_8_2, Novel_8_3, Novel_8_4]         # Novel correct test strings consisting of 8 numbers
+   Viol_4: [Viol_4_1, Viol_4_2, Viol_4_3, Viol_4_4]         # Violating correct test strings consisting of 4 numbers
+   Viol_5: [Viol_5_1, Viol_5_2, Viol_5_3, Viol_5_4]         # Violating correct test strings consisting of 5 numbers
+   Viol_6: [Viol_6_1, Viol_6_2, Viol_6_3, Viol_6_4]         # Violating correct test strings consisting of 6 numbers
+   Viol_7: [Viol_7_1, Viol_7_2, Viol_7_3, Viol_7_4]         # Violating correct test strings consisting of 7 numbers
+   Viol_8: [Viol_8_1, Viol_8_2, Viol_8_3, Viol_8_4]         # Violating correct test strings consisting of 8 numbers
+
