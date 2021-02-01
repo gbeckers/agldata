@@ -21,13 +21,14 @@ strings:
   - Test2: B2B1C1A1A2
   - Test3: A2A1C1B2B1
   - Test4: B2B1C1A2A1
+  - Test5: 12343412 # numbers will be interpreted as tokens ("12","34","34","12")
 
 # Optionally define categories of strings like below. This can be handy when
 # there a groups of strings that have different roles in an experiment.
 categories:
-  - Exposure: [Exposure1, Exposure2]
-  - TestCorrect: [Test1, Test2]
-  - TestViolating: [Test3, Test4]
+  Exposure: [Exposure1, Exposure2]
+  TestCorrect: [Test1, Test2]
+  TestViolating: [Test3, Test4]
 
 # Optionally define colors that signify categories. This can be handy in
 # vizualization, for example in case you want to use the same colors as was
@@ -36,7 +37,7 @@ categories:
 categorycolors:
     Exposure: "#000077" # blue
     TestCorrect: "#007700" # green
-    TestViolation: "#770000" # red
+    TestViolating: "#770000" # red
 
 # Optionally define token durations, in seconds.
 tokendurations:
