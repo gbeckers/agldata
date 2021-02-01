@@ -1,0 +1,190 @@
+# The strings sets originate from: Kepinska, O., de Rover, M., Caspers, J., & Schiller, N. O. (2017). On neural
+# correlates of individual differences in novel grammar learning: an fMRI study. Neuropsychologia, 98, 156-168.
+
+# boke = bok
+# rufie = ruf
+# trul = tul
+# prez = pez
+
+# the grammar is base on the BROCANTO artificial grammar and is very real language like. They diffrientiate the tokens in
+# the following groups: noun, verb, adjective, adverbs and determiners. THe token are made-up words of 3 to 5 letters.
+# for the purpose of this study all words are made 3 letters long.
+
+# More studies using this AGL
+#   - Opitz, B., & Friederici, A. D. (2003). Interactions of the hippocampal system and the prefrontal cortex in
+#     learning language-like rules. NeuroImage, 19(4), 1730-1737.
+#   - Hauser, M. F., Hofmann, J., & Opitz, B. (2012). Rule and similarity in grammar:
+#     Their interplay and individual differences in the brain. NeuroImage, 60(4), 2019-2026.
+
+
+readingframe: 3
+
+strings:
+    - hab_1 :     aafgumpez
+    - hab_2 :     aaftulpel
+    - hab_3 :     aaftulpezaafgum
+    - hab_4 :     aafgumpelaaftul
+    - hab_5 :     aafgumpelaakbokgum
+    - hab_6 :     aaftulpezaakbokgum
+    - hab_7 :     aaftulpelrufaakbokgum
+    - hab_8 :     aafgumpezrufaakboktul
+    - hab_9 :     aafgumpelruf
+    - hab_10 :    aaftulpezruf
+    - hab_11 :    aafgumpelrufaaftul
+    - hab_12 :    aaftulpezrufaaftul
+    - hab_13 :    aakbokgumpez
+    - hab_14 :    aakboktulpel
+    - hab_15 :    aakboktulpelaafgum
+    - hab_16 :    aakbokgumpelaaftul
+    - hab_17 :    aakboktulpezaakbokgum
+    - hab_18 :    aakbokgumpelaakboktul
+    - hab_19 :    aakbokgumpezrufaakboktul
+    - hab_20 :    aakboktulpelrufaakboktul
+    - hab_21 :    aakbokgumpelruf
+    - hab_22 :    aakboktulpezruf
+    - hab_23 :    aakbokgumpezrufaafgum
+    - hab_24 :    aakboktulpezrufaffgum
+    - gram_1 :    aaftulpez
+    - gram_2 :    aakbokgumpelaakboktul
+    - gram_3 :    aakboktulpez
+    - gram_4 :    aaftulpezaakboktul
+    - gram_5 :    aaftulpelaakbokgum
+    - gram_6 :    aakbokgumpelrufaafgum
+    - gram_7 :    aakboktulpezruf
+    - gram_8 :    aaftulpezaakbokgum
+    - gram_9 :    aakbokgumpezaafgum
+    - gram_10 :    aaftulpel
+    - gram_11 :    aafgumpezruf
+    - gram_12 :    aafgumpez
+    - gram_13 :    aakbokgumpelrufaaftul
+    - gram_14 :    aaftulpelrufaafgum
+    - gram_15 :    aafgumpezrufaaftul
+    - gram_16 :    aakbokgumpez
+    - gram_17 :    aaftulpelaakboktul
+    - gram_18 :    aaftulpelrufaaftul
+    - gram_19 :    aakboktulpelrufaaftul
+    - gram_20 :    aafgumpelrufaafgum
+    - gram_21 :    aakboktulpel
+    - gram_22 :    aafgumpel
+    - gram_23 :    aakboktulpelaakbokgum
+    - gram_24 :    aakboktulpelaafgum
+    - gram_25 :    aafgumpelaakboktul
+    - gram_26 :    aafgumpelrufaakbokgum
+    - gram_27 :    aakbokgumpezaakbokgum
+    - gram_28 :    aakboktulpezrufaafgum
+    - gram_29 :    aafgumpezrufaafgum
+    - gram_30 :    aakbokgumpezrufaaftul
+    - gram_31 :    aaftulpezaaftul
+    - gram_32 :    aaftulpezruf
+    - gram_33 :    aakboktulpezrufaaftul
+    - gram_34 :    aakbokgumpelaakbokgum
+    - gram_35 :    aakboktulpezaakboktul
+    - gram_36 :    aafgumpelaakbokgum
+    - gram_37 :    aakboktulpelaakboktul
+    - gram_38 :    aakbokgumpelaaftul
+    - gram_39 :    aafgumpelaaftul
+    - gram_40 :    aafgumpezaaftul
+    - gram_41 :    aafgumpelrufaaftul
+    - gram_42 :    aaftulpelruf
+    - gram_43 :    aakbokgumpelruf
+    - gram_44 :    aakboktulpezaakbokgum
+    - gram_45 :    aaftulpezaafgum
+    - gram_46 :    aaftulpelaafgum
+    - gram_47 :    aakbokgumpezrufaafgum
+    - gram_48 :    aafgumpezrufaakbokgum
+    - gram_49 :    aaftulpezrufaakboktul
+    - gram_50 :    aakbokgumpezaaftul
+    - gram_51 :    aafgumpelaafgum
+    - gram_52 :    aakboktulpezaafgum
+    - gram_53 :    aaftulpezrufaafgum
+    - gram_54 :    aakboktulpezaaftul
+    - gram_55 :    aakboktulpelrufaafgum
+    - gram_56 :    aakbokgumpel
+    - gram_57 :    aaftulpelaaftul
+    - gram_58 :    aaftulpelrufaakbokgum
+    - gram_59 :    aafgumpezrufaakboktul
+    - gram_60 :    aafgumpezaafgum
+    - gram_61 :    aakbokgumpezaakboktul
+    - gram_62 :    aaftulpelrufaakboktul
+    - gram_63 :    aafgumpezaakboktul
+    - gram_64 :    aakbokgumpelaafgum
+    - gram_65 :    aakboktulpelruf
+    - gram_66 :    aafgumpelrufaakboktul
+    - gram_67 :    aaftulpezrufaakbokgum
+    - gram_68 :    aakboktulpelaaftul
+    - gram_69 :    aaftulpezrufaaftul
+    - gram_70 :    aafgumpezaakbokgum
+    - gram_71 :    aafgumpelruf
+    - gram_72 :    aakbokgumpezruf
+    - dn_viol_1:   aafbokgumpez
+    - dn_viol_2:   aafboktulpel
+    - dn_viol_3:   aafboktulpezaakbokgum
+    - dn_viol_4:   aakbokgumpelaafboktul
+    - dn_viol_5:   aakboktulpezaafgum
+    - dn_viol_6:   aakbokgumpelaaktul
+    - dn_viol_7:   aakbokgumpelruf
+    - dn_viol_8:   aakboktulpezruf
+    - dn_viol_9:   aakbokgumpelrufaaktul
+    - dn_viol_10:   aafboktulpezrufaafgum
+    - dn_viol_11:   aakgumpel
+    - dn_viol_12:   aaktulpez
+    - dn_viol_13:   aaktulpelaakbokgum
+    - dn_viol_14:   aafgumpezaafboktul
+    - dn_viol_15:   aaftulpelaaktul
+    - dn_viol_16:   aaftulpezaakgum
+    - dn_viol_17:   aakgumpelruf
+    - dn_viol_18:   aaktulpezruf
+    - dn_viol_19:   aaktulpelrufaakbokgum
+    - dn_viol_20:   aafgumpezrufaafboktul
+    - dn_viol_21:   aafgumpelrufaaktul
+    - dn_viol_22:   aakgumpezrufaafgum
+    - rn_viol_1:   aakbokgumtul
+    - rn_viol_2:   aakbokpelpez
+    - rn_viol_3:   aakbokpezpelaakbokgum
+    - rn_viol_4:   aakbokpelpezaakboktul
+    - rn_viol_5:   aakbokpelpezaaftul
+    - rn_viol_6:   aakbokpezpelaafgum
+    - rn_viol_7:   aakbokgumtulruf
+    - rn_viol_8:   aakbokpelpezruf
+    - rn_viol_9:   aakboktulgumrufaafgum
+    - rn_viol_10:   aakbokpezpelrufaafgum
+    - rn_viol_11:   aafgumtul
+    - rn_viol_12:   aafpelpez
+    - rn_viol_13:   aafpelpezaakbokgum
+    - rn_viol_14:   aafpezpelaakboktul
+    - rn_viol_15:   aafpelpezaaftul
+    - rn_viol_16:   aafpezpelaafgum
+    - rn_viol_17:   aafpezpel
+    - rn_viol_18:   aaftulgum
+    - rn_viol_19:   aafpezpelrufaakbokgum
+    - rn_viol_20:   aafgumtulrufaakboktul
+    - rn_viol_21:   aaftulgumrufaafgum
+    - rn_viol_22:   aafpezpelrufaaftul
+    - ps_viol_1:   aakbokgumaaftul
+    - ps_viol_2:   aakboktulaafgum
+    - ps_viol_3:   aakbokgumaakboktulpez
+    - ps_viol_4:   aakboktulaakboktulpel
+    - ps_viol_5:   aakboktulaafgumpel
+    - ps_viol_6:   aakbokgumaaftulpez
+    - ps_viol_7:   aakboktulaakbokgum
+    - ps_viol_9:   aakboktulaaftulpezruf
+    - ps_viol_10:   aakbokgumaafgumpelruf
+    - ps_viol_11:   aafgumaaftul
+    - ps_viol_12:   aaftulaafgum
+    - ps_viol_13:   aaftulaakbokgumpez
+    - ps_viol_14:   aafgumaakboktulpel
+    - ps_viol_15:   aafgumaafgumpez
+    - ps_viol_16:   aaftulaafgumpel
+    - ps_viol_17:   aafgumaakgoktul
+    - ps_viol_18:   aaftulaakbokgum
+    - ps_viol_19:   aaftulaakboktulpezruf
+    - ps_viol_20:   aaftulaakbokgumpezruf
+    - ps_viol_21:   aaftulaaftulpezruf
+    - ps_viol_22:   aafgumaafgumpelruf
+
+categories:
+   Hab: [hab_1, hab_2, hab_3, hab_4, hab_5, hab_6, hab_7, hab_8, hab_9, hab_10, hab_11, hab_12, hab_13, hab_14, hab_15, hab_16, hab_17, hab_18, hab_19, hab_20, hab_21, hab_22, hab_23, hab_24] # habituation strings
+   Gram: [gram_1, gram_2, gram_3, gram_4, gram_5, gram_6, gram_7, gram_8, gram_9, gram_10, gram_11, gram_12, gram_13, gram_14, gram_15, gram_16, gram_17, gram_18, gram_19, gram_20, gram_21, gram_22, gram_23, gram_24, gram_25, gram_26, gram_27, gram_28, gram_29, gram_30, gram_31, gram_32, gram_33, gram_34, gram_35, gram_36, gram_37, gram_38, gram_39, gram_40, gram_41, gram_42, gram_43, gram_44, gram_45, gram_46, gram_47, gram_48, gram_49, gram_50, gram_51, gram_52, gram_53, gram_54, gram_55, gram_56, gram_57, gram_58, gram_59, gram_60, gram_61, gram_62, gram_63, gram_64, gram_65, gram_66, gram_67, gram_68, gram_69, gram_70, gram_71, gram_72]  # grammatical strings
+   dn_viol: [dn_viol_1, dn_viol_2, dn_viol_3, dn_viol_4, dn_viol_5, dn_viol_6, dn_viol_7, dn_viol_8, dn_viol_9, dn_viol_10, dn_viol_11, dn_viol_12, dn_viol_13, dn_viol_14, dn_viol_15, dn_viol_16, dn_viol_17, dn_viol_18, dn_viol_19, dn_viol_20, dn_viol_21, dn_viol_22]                     # Ungrammatical strings with a determiner-noun-agreement violations
+   rn_viol: [rn_viol_1, rn_viol_2, rn_viol_3, rn_viol_4, rn_viol_5, rn_viol_6, rn_viol_7, rn_viol_8, rn_viol_9, rn_viol_10, rn_viol_11, rn_viol_12, rn_viol_13, rn_viol_14, rn_viol_15, rn_viol_16, rn_viol_17, rn_viol_18, rn_viol_19, rn_viol_20, rn_viol_21, rn_viol_22]                     # Ungrammatical strings with repetitions of nouns violations
+   ps_viol: [ps_viol_1, ps_viol_2, ps_viol_3, ps_viol_4, ps_viol_5, ps_viol_6, ps_viol_7, ps_viol_9, ps_viol_10, ps_viol_11, ps_viol_12, ps_viol_13, ps_viol_14, ps_viol_15, ps_viol_16, ps_viol_17, ps_viol_18, ps_viol_19, ps_viol_20, ps_viol_21, ps_viol_22]                     # Ungrammatical strings with phrase structure violations

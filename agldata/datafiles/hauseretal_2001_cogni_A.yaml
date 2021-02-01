@@ -15,7 +15,7 @@ strings:
    - Non_1:            dapiku
    - Non_2:            tilado
    - Part_1:           tibida
-   - Part_1:           kupado
+   - Part_2:           kupado
 
 categories:
    Hab: [Hab_1, Hab_2, Hab_3, Hab_4]
@@ -23,10 +23,8 @@ categories:
    Non: [Non_1, Non_2]           # Novel incorrect test strings
    Part: [Part_1, Part_2]     # Part words, comparable but slightly different
 
-
-
 categorycolors:
-   Fam: "#0071c1"
+   Hab: "#0071c1"
    Test: "#01b0f1"
    Non: "#c00000"
    Part: "#fe0000"

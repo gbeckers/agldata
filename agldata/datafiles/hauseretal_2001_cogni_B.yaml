@@ -15,7 +15,7 @@ strings:
    - Non_1:            tigobu
    - Non_2:            kudabi
    - Part_1:           pabiku
-   - Part_1:           tibudo
+   - Part_2:           tibudo
 
 categories:
    Hab: [Hab_1, Hab_2, Hab_3, Hab_4]
@@ -24,9 +24,8 @@ categories:
    Part: [Part_1, Part_2]     # Part words, comparable but slightly different
 
 
-
 categorycolors:
-   Fam: "#0071c1"
+   Hab: "#0071c1"
    Test: "#01b0f1"
    Non: "#c00000"
    Part: "#fe0000"
