@@ -40,6 +40,7 @@ class String(str):
         return (len(value) % readingframe) == 0
 
     def __new__(cls, value, readingframe=None):
+        value = str(value)
         if readingframe is None:
             readingframe = getattr(value, 'readingframe', 1)
         if readingframe != getattr(value, 'readingframe', readingframe):
@@ -51,6 +52,7 @@ class String(str):
         return super().__new__(cls, value)
 
     def __init__(self, value, readingframe=None):
+        value = str(value)
         if readingframe is None:
             readingframe = getattr(value, 'readingframe', 1)
         if readingframe != getattr(value, 'readingframe', readingframe):
