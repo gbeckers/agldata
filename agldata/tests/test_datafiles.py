@@ -15,3 +15,6 @@ class DataFiles(unittest.TestCase):
         for study in availablestudies:
             for key in get_datadict(study).keys():
                 self.assertIn(key, validkeys, msg=study)
+        for key in get_datadict('mockexample').keys():
+            self.assertIn(key, validkeys, msg='mockexample')
+
